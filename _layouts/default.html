@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title | default: site.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand">
+        <a href="{{ '/' | relative_url }}">Kacie Wielgus (Buzzard)</a>
+        <small>Speaker • Inclusion Consultant • Writer</small>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        <a href="{{ '/#speaking' | relative_url }}">Speaking</a>
+        <a href="{{ '/#services' | relative_url }}">Services</a>
+        <a href="{{ '/#excerpts' | relative_url }}">Excerpts</a>
+        <a href="{{ '/excerpts/' | relative_url }}">Read More</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="pill" href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="footer wrap">
+    <div>© {{ "now" | date: "%Y" }} Kacie Wielgus (Buzzard)</div>
+    <div class="footer-links">
+      <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a>
+      <span>•</span>
+      <a href="{{ '/#top' | relative_url }}">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
