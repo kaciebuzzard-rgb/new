@@ -24,3 +24,9 @@ hero-image-fix
 header-update
 speaking-section
 css-cleanup
+assets
+_layouts
+_posts
+Gemfile
+README.md
+index.md
