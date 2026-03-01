@@ -7,3 +7,4 @@ collections:
     permalink: /excerpts/:name/
 
 permalink: /blog/:year/:month/:day/:title/
+layout: default
