@@ -12,3 +12,12 @@ layout: default
 title: "Kacie Wielgus (Buzzard)"
 layout: default
 ---
+title: "Kacie Wielgus (Buzzard)"
+markdown: kramdown
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
+
+permalink: pretty
