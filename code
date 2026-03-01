@@ -31,3 +31,8 @@ Gemfile
 README.md
 index.md
 assets/img/kacie-speaking.jpg
+assets → Add folder → img
+assets/img/
+→ Add file
+→ Upload kacie-speaking.jpg
+→ Commit directly to main
