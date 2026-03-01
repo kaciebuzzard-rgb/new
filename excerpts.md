@@ -11,3 +11,8 @@ permalink: /excerpts/
     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
 </ul>
+---
+title: "Waiting"
+---
+
+Excerpt text goes here.
