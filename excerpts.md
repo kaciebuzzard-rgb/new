@@ -16,3 +16,15 @@ title: "Waiting"
 ---
 
 Excerpt text goes here.
+_excerpts/hallway.md
+---
+title: "Hallway"
+---
+
+Excerpt text goes here.
+_excerpts/chair.md
+---
+title: "Chair"
+---
+
+Excerpt text goes here.
