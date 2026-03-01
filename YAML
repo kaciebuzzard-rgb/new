@@ -8,3 +8,7 @@ collections:
 
 permalink: /blog/:year/:month/:day/:title/
 layout: default
+---
+title: "Kacie Wielgus (Buzzard)"
+layout: default
+---
