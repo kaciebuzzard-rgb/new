@@ -1,0 +1,4 @@
+ls -la assets
+ls -la assets/img
+git status
+git ls-files | grep -i "kacie-speaking"
