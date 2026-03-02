@@ -11,3 +11,4 @@ title: Home
     Read Excerpts
   </a>
 </section>
+assets/css/styles.css
