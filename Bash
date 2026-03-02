@@ -8,3 +8,6 @@ git add assets/img/kacie-speaking.jpg
 git status
 git commit -m "Add hero image"
 git push
+git add .
+git commit -m "Enable Jekyll build on Netlify"
+git push
