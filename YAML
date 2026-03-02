@@ -1,11 +1,7 @@
 title: "Kacie Wielgus (Buzzard)"
-description: "Speaker & Inclusion Consultant"
+description: "Speaker • Inclusion Consultant • Writer"
 markdown: kramdown
 theme: null
-
-url: "https://kacies.life"
-baseurl: ""   # <-- MUST be empty for a root domain
-
 permalink: pretty
 
 collections:
@@ -15,4 +11,3 @@ collections:
 
 include:
   - assets
-  - _pages
