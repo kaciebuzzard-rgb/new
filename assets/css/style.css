@@ -1,1 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <a href="{{ '/' | relative_url }}">
+          {{ site.title }}
+          <small>{{ site.description }}</small>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#speaking">Speaking</a>
+        <a href="#consulting">Consulting</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="wrap" style="padding-top: 0;">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+
+</body>
+</html>
