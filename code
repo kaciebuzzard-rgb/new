@@ -1,11 +1,12 @@
-.
-├─ assets/
-│  ├─ site.css
-│  └─ img/
-│     └─ kacie-speaking.jpg
-├─ index.md
-├─ _layouts/
-│  └─ default.html
-├─ _config.yml
-├─ netlify.toml
-...
+/assets
+   /css
+      styles.css
+/assets
+   /img
+      kacie-speaking.jpg
+
+_layouts
+   default.html
+
+index.html
+_config.yml
