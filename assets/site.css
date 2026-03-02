@@ -108,10 +108,12 @@ a:hover{color:var(--primary)}
 }
 .hero-photo img{
   width:100%;
-  height:auto;
+  height:320px;
+  object-fit:cover;
   display:block;
   border-radius:14px;
 }
+
 .hero-side{
   margin-top:14px;
   background:rgba(255,255,255,.70);
@@ -168,6 +170,7 @@ textarea{min-height:130px;resize:vertical}
   .hero-grid{grid-template-columns:1fr}
   .hero p{font-size:16px}
 }
+
 /* Anchor offset for sticky header */
 #about, #speaking, #services, #excerpts, #contact {
   scroll-margin-top: 110px;
@@ -175,7 +178,3 @@ textarea{min-height:130px;resize:vertical}
 
 /* Optional: smooth scrolling */
 html { scroll-behavior: smooth; }
-assets/
-├── site.css        ✅
-└── img/
-    └── kacie-speaking.jpg ✅
