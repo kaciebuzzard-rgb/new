@@ -1,0 +1,19 @@
+title: "Kacie Wielgus (Buzzard)"
+description: "Speaker • Inclusion Consultant • Writer"
+
+url: "https://kacie-wielgus.netlify.app"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
