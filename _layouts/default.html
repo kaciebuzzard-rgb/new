@@ -1,39 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Fonts first -->
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS (cache-busted) -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
 <body>
+
+  <!-- Skip Link -->
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- Header -->
   <header class="site-header">
-    <div class="nav">
+    <nav class="nav">
       <div class="brand">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <small>{{ site.description }}</small>
+        <a href="{{ '/' | relative_url }}">
+          {{ site.title }}
+          <small>{{ site.description }}</small>
+        </a>
       </div>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/#about' | relative_url }}">About</a>
-        <a href="{{ '/#services' | relative_url }}">Services</a>
-        <a href="{{ '/#contact' | relative_url }}">Contact</a>
-        <a class="pill" href="{{ '/#contact' | relative_url }}">Book Kacie</a>
-      </nav>
-    </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="#contact">Book Kacie</a>
+      </div>
+    </nav>
   </header>
 
+  <!-- Main Content -->
   <main id="main" class="wrap">
     {{ content }}
   </main>
+
+  <!-- Footer -->
+  <footer class="wrap" style="padding-top:0;">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
