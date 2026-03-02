@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title | default: site.title }}</title>
-
+  <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand">
+        <strong>{{ site.title }}</strong>
+        <small>{{ site.description }}</small>
+      </div>
+    </div>
+  </header>
 
-  <main>
+  <main class="wrap">
     {{ content }}
   </main>
-
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-  </footer>
-
 </body>
 </html>
