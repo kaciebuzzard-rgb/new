@@ -16,3 +16,197 @@ git mv assets/css/styles.css assets/css/style.css
 git add -A
 git commit -m "Fix stylesheet filename"
 git push
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <h1>Kacie Wielgus (Buzzard)</h1>
+  <p>Speaker • Inclusion Consultant • Writer</p>
+  <a class="btn" href="#about">Learn more</a>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>Short bio goes here.</p>
+  </div>
+</section>   ---
+title: "Welcome"
+---
+
+This is the start of the blog.   <a href="/#speaking">Speaking</a> ls -la
+ls -la assets || true
+ls -la assets/img || true
+git status
+mkdir -p assets/img
+cp "/c/Users/kaciebuzzard/Downloads/kacie-speaking.jpg" "assets/img/kacie-speaking.jpg"
+git add assets/img/kacie-speaking.jpg
+git status
+git commit -m "Add hero image"
+git push
+git add .
+git commit -m "Enable Jekyll build on Netlify"
+git push
+ls -la assets/css
+git mv assets/css/styles.css assets/css/style.css
+git add -A
+git commit -m "Fix stylesheet filename"
+git push   source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3"
+gem "webrick"  [build]
+command = "bundle install && bundle exec jekyll build"   ---
+layout: default
+title: Home
+---
+title: Kacie Wielgus (Buzzard)
+markdown: kramdown
+theme: null  title: "Kacie Wielgus (Buzzard)"
+markdown: kramdown
+permalink: pretty
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default   ---
+layout: default
+title: "Blog"
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span style="color: var(--muted); font-weight: 650;"> — {{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>    
+publish = "_site"  /
+index.html  [build]
+  publish = "."
+background-image:url("/assets/img/kacie-speaking.jpg");   ---
+layout: default
+title: "Excerpts"
+permalink: /excerpts/
+---
+
+<h1>Excerpts</h1>
+
+<ul>
+  {% for item in site.excerpts %}
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+---
+title: "Waiting"
+---
+
+Excerpt text goes here.
+_excerpts/hallway.md
+---
+title: "Hallway"
+---
+
+Excerpt text goes here.
+_excerpts/chair.md
+---
+title: "Chair"
+---
+
+Excerpt text goes here. 
+assets/
+   css/
+      styles.css
+   img/
+      kacie-speaking.jpg
+index.html
+assets/
+   css/
+      styles.css
+.nojekyll
+assets/css/style.css
+assets/img/.keep
+assets/img/kacie-speaking.jpg
+.ruby-version
+3.2.2   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kacie Wielgus (Buzzard)</title>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <h2>Kacie Wielgus (Buzzard)</h2>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Speaker • Inclusion Consultant • Writer</h1>
+    <p>Human-centered communication and inclusive leadership.</p>
+  </div>
+</section>
+
+</body>
+</html>  ---
+layout: default
+title: Home
+---
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kacie Wielgus (Buzzard)</title>
+
+  <!-- ✅ CSS (absolute path) -->
+  <link rel="stylesheet" href="/assets/css/styles.css?v=1" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <h1>Kacie Wielgus (Buzzard)</h1>
+  <p>Speaker • Inclusion Consultant • Writer</p>
+  <a class="btn" href="#about">Learn more</a>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>Short bio goes here.</p>
+  </div>
+</section>   <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kacie Wielgus (Buzzard)</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <h1 style="padding:40px;font-family:Montserrat,system-ui;">It’s working.</h1>
+</body>
+</html>  kacie-speaking.png
