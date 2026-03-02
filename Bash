@@ -14,3 +14,7 @@ cp "/c/Users/<kacie-speaking>/Downloads/kacie-speaking.jpg" "assets/img/kacie-sp
 git add .
 git commit -m "Fix site structure and CSS link"
 git push
+bundle install
+git add Gemfile Gemfile.lock
+git commit -m "Fix Gemfile"
+git push
