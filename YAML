@@ -1,9 +1,7 @@
-title: Kacie Wielgus (Buzzard)
-description: Speaker & Inclusion Consultant
-
-markdown: kramdown
+title: "Kacie Wielgus (Buzzard)"
+description: "Speaker & Inclusion Consultant"
 theme: null
-
+markdown: kramdown
 permalink: pretty
 
 collections:
