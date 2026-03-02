@@ -1,8 +1,13 @@
-/
-│
-├── index.html
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   └── img/
-│       └── kacie-speaking.jpg
+Netlify Dashboard
+
+→ Site Settings
+→ Build & Deploy
+→ Build Settings
+
+Set:
+
+Build command:
+(empty)
+
+Publish directory:
+.
