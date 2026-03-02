@@ -214,3 +214,6 @@ title: Home
 </body>
 </html>  kacie-speaking.png
 git rm -f assets/css
+git add -A
+git commit -m "Clean Jekyll structure, fix assets paths, add netlify config"
+git push
