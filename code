@@ -11,3 +11,4 @@ assets/
       styles.css
 .nojekyll
 assets/css/style.css
+assets/img/.keep
