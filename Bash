@@ -158,6 +158,9 @@ assets/img/kacie-speaking.jpg
     <h2>Kacie Wielgus (Buzzard)</h2>
   </div>
 </header>
+git mv assets/assets/css/styles.css assets/css/style.css
+git mv assets/assets/css/kacie-speaking.jpg assets/img/kacie-speaking.jpg
+git rm -r assets/assets
 
 <section class="hero">
   <div class="hero-content">
