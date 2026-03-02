@@ -29,9 +29,10 @@ description: "Story-driven keynotes and practical workshops on caregiving, neuro
       </div>
     </div>
 
-    <aside class="hero-card" aria-label="Hero image and quick details">
+    <aside class="hero-card">
       <div class="hero-photo">
-        <img src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}" alt="Kacie speaking on stage" />
+        <img src="{{ '/assets/img/kacie-speaking.png' | relative_url }}" 
+             alt="Kacie speaking on stage" />
       </div>
 
       <div class="hero-side">
@@ -41,9 +42,14 @@ description: "Story-driven keynotes and practical workshops on caregiving, neuro
           <li>Workshops with tools teams can use the next day.</li>
           <li>Consulting that connects strategy, accessibility, and trust.</li>
         </ul>
-        <div class="note">Email: <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a></div>
+        <div class="note">
+          Email: <a href="mailto:kacie.buzzard@gmail.com">
+            kacie.buzzard@gmail.com
+          </a>
+        </div>
       </div>
     </aside>
+
   </div>
 </section>
 
