@@ -1,7 +1,17 @@
----
-layout: default
-title: Home
----
-title: Kacie Wielgus (Buzzard)
+title: "Kacie Wielgus (Buzzard)"
 markdown: kramdown
-theme: null
+permalink: pretty
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+include:
+  - assets
