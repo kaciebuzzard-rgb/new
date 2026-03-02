@@ -1,14 +1,44 @@
+---
+layout: null
+---
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title | default: site.title }}</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- IMPORTANT: your CSS is currently here -->
+  <link rel="stylesheet" href="{{ '/assets/assets/css/styles.css' | relative_url }}">
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand">
+        <a href="{{ '/' | relative_url }}">Kacie Wielgus (Buzzard)</a>
+        <small>Speaker • Inclusion Consultant • Writer</small>
+      </div>
+
+      <nav class="nav-links">
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#services">Services</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="pill" href="{{ '/' | relative_url }}#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
     {{ content }}
-  </body>
+  </main>
+
+</body>
 </html>
