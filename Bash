@@ -12,3 +12,7 @@ git add .
 git commit -m "Enable Jekyll build on Netlify"
 git push
 ls -la assets/css
+git mv assets/css/styles.css assets/css/style.css
+git add -A
+git commit -m "Fix stylesheet filename"
+git push
