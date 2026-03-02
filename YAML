@@ -1,23 +1,14 @@
 title: "Kacie Wielgus (Buzzard)"
+description: "Speaker & Inclusion Consultant"
+theme: null
 markdown: kramdown
-
-collections:
-  excerpts:
-    output: true
-    permalink: /excerpts/:name/
-
-permalink: /blog/:year/:month/:day/:title/
-layout: default
----
-title: "Kacie Wielgus (Buzzard)"
-layout: default
----
-title: "Kacie Wielgus (Buzzard)"
-markdown: kramdown
-
-collections:
-  excerpts:
-    output: true
-    permalink: /excerpts/:name/
 
 permalink: pretty
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
+
+include:
+  - assets
