@@ -1,12 +1,8 @@
-/assets
-   /css
-      styles.css
-/assets
-   /img
-      kacie-speaking.jpg
-
-_layouts
-   default.html
-
-index.html
-_config.yml
+/
+│
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── img/
+│       └── kacie-speaking.jpg
