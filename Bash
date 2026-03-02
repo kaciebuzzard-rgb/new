@@ -7,3 +7,7 @@ cp /path/to/your/kacie-speaking.jpg assets/img/kacie-speaking.jpg
 git add assets/img/kacie-speaking.jpg
 git commit -m "Add hero image"
 git push
+git add .
+git commit -m "Fix Jekyll config"
+git push
+cp "/c/Users/<kacie-speaking>/Downloads/kacie-speaking.jpg" "assets/img/kacie-speaking.jpg"
