@@ -16,3 +16,14 @@ assets/img/kacie-speaking.jpg
 .ruby-version
 3.2.2
 /assets/assets/css/styles.css
+/
+├── _layouts/
+│     └── default.html
+├── assets/
+│     ├── css/
+│     │     └── style.css
+│     └── img/
+│           └── kacie-speaking.jpg
+├── index.html
+├── _config.yml
+└── netlify.toml
