@@ -2,3 +2,4 @@ ls -la
 ls -la assets || true
 ls -la assets/img || true
 git status
+mkdir -p assets/img
