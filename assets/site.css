@@ -206,3 +206,12 @@ p{ font-size:18px; margin:10px 0 0; }
   .nav-links.open{ display:flex; }
   .pill{ width:100%; text-align:center; }
 }
+speaker/
+│
+├── index.html   ✅ MUST BE HERE
+│
+└── assets/
+    ├── css/
+    │   └── styles.css
+    └── img/
+        └── kacie-speaking.jpg
