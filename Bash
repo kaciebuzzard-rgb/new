@@ -218,3 +218,7 @@ git add -A
 git commit -m "Clean Jekyll structure, fix assets paths, add netlify config"
 git push
 git rm -f .nojekyll
+git mv assets/css/styles.css assets/css/style.css
+git add -A
+git commit -m "Rename stylesheet to style.css"
+git push
