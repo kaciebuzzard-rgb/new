@@ -1,48 +1,11 @@
 .
-├─ netlify.toml
-├─ _config.yml
-├─ Gemfile
-├─ _layouts/
-│  └─ default.html
 ├─ assets/
 │  ├─ site.css
 │  └─ img/
-│     └─ kacie-speaking.jpg   (YOU add this image)
-├─ index.md
-├─ excerpts.md
-├─ blog.md
-├─ _posts/
-│  └─ 2026-03-01-welcome.md
-└─ _excerpts/
-   ├─ waiting.md
-   ├─ hallway.md
-   └─ chair.md
-assets
- └── img
-      └── kacie-speaking.jpg
-hero-image-fix
-header-update
-speaking-section
-css-cleanup
-assets
-_layouts
-_posts
-Gemfile
-README.md
-index.md
-assets/img/kacie-speaking.jpg
-assets → Add folder → img
-assets/img/
-→ Add file
-→ Upload kacie-speaking.jpg
-→ Commit directly to main
-.
-├─ img/
-│   └── kacie-speaking.jpg   ✅
-├─ assets/
-│   └── site.css
+│     └─ kacie-speaking.jpg
 ├─ index.md
 ├─ _layouts/
+│  └─ default.html
 ├─ _config.yml
-img/kacie-speaking.jpg
-
+├─ netlify.toml
+...
