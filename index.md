@@ -2,15 +2,45 @@
 layout: default
 title: Home
 ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kacie Wielgus (Buzzard)</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<body>
-  <h1 style="padding:40px;font-family:Montserrat,system-ui;">It’s working.</h1>
-</body>
-</html>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Kacie Wielgus (Buzzard)</h1>
+    <p>Speaker • Inclusion Consultant • Writer</p>
+    <a class="btn" href="#about">Learn more</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>Short bio goes here.</p>
+  </div>
+</section>
+
+<section id="services" class="light">
+  <div class="wrap">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Speaking</h3>
+        <p>Keynotes and workshops on human-centered communication and inclusive leadership.</p>
+      </div>
+      <div class="card">
+        <h3>Thought Leadership</h3>
+        <p>Story-driven content and strategy that builds trust, clarity, and community.</p>
+      </div>
+      <div class="card">
+        <h3>Inclusion Consulting</h3>
+        <p>Practical frameworks for accessibility, belonging, and communication that works.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hello@kacies.life">hello@kacies.life</a></p>
+  </div>
+</section>
