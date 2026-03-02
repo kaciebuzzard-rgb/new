@@ -1,20 +1,4 @@
-ls -la assets
-ls -la assets/img
+ls -la
+ls -la assets || true
+ls -la assets/img || true
 git status
-git ls-files | grep -i "kacie-speaking"
-mkdir -p assets/img
-cp /path/to/your/kacie-speaking.jpg assets/img/kacie-speaking.jpg
-git add assets/img/kacie-speaking.jpg
-git commit -m "Add hero image"
-git push
-git add .
-git commit -m "Fix Jekyll config"
-git push
-cp "/c/Users/<kacie-speaking>/Downloads/kacie-speaking.jpg" "assets/img/kacie-speaking.jpg"
-git add .
-git commit -m "Fix site structure and CSS link"
-git push
-bundle install
-git add Gemfile Gemfile.lock
-git commit -m "Fix Gemfile"
-git push
