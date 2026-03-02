@@ -5,3 +5,5 @@ git branch
 git add .
 git commit -m "Update site"
 git push origin main
+bundle exec jekyll build
+ls -la _site
