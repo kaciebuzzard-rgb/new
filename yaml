@@ -4,9 +4,7 @@ description: "Speaker • Inclusion Consultant • Writer"
 url: "https://kacie-wielgus.netlify.app"
 baseurl: ""
 
-theme: null
 markdown: kramdown
-
 permalink: pretty
 
 collections:
@@ -19,6 +17,3 @@ defaults:
       path: ""
     values:
       layout: default
-
-include:
-  - assets
