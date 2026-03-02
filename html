@@ -11,7 +11,7 @@
 
       <div class="cta">
         <a class="btn primary" href="#contact">Book Kacie</a>
-        <a class="btn" href="/excerpts/">Read Excerpts</a>
+        <a class="btn" href="{{ '/excerpts/' | relative_url }}">Read Excerpts</a>
       </div>
 
       <div class="chips">
@@ -21,18 +21,24 @@
       </div>
     </div>
 
+    <aside class="hero-card">
+      <div class="hero-photo">
+        <img
+          src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
+          alt="Kacie speaking on stage"
+          loading="eager"
+        />
+      </div>
+
+      <div class="hero-side">
+        <h3>What you can expect</h3>
+        <ul>
+          <li>Keynotes that move a room and give people language.</li>
+          <li>Workshops with tools teams can use the next day.</li>
+          <li>Consulting that connects strategy, accessibility, and trust.</li>
+        </ul>
+      </div>
+    </aside>
+
   </div>
 </section>
-
-<section id="speaking" class="block">
-  ...
-</section>
-<img
-  src="{{ '/assets/kacie-speaking.jpg' | relative_url }}"
-  alt="Kacie speaking on stage"
-  loading="eager"
-/>
-<div style="height:320px;border-radius:18px;background:rgba(255,255,255,.55);border:1px solid #e7dfd4;display:flex;align-items:center;justify-content:center;font-weight:800;color:#6b5e55;">
-  Hero image coming soon
-</div>
-<img src="{{ '/img/kacie-speaking.jpg' | relative_url }}">
