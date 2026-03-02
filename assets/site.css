@@ -113,6 +113,13 @@ a:hover{color:var(--primary)}
   display:block;
   border-radius:14px;
 }
+.hero-side{
+  margin-top:14px;
+  background:rgba(255,255,255,.70);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding:14px;
+}
 
 .hero-side{
   margin-top:14px;
