@@ -10,3 +10,16 @@
   <h1 style="padding:40px;font-family:Montserrat,system-ui;">It’s working.</h1>
 </body>
 </html>
+speaker/
+│
+├── _config.yml
+├── index.html
+│
+├── _layouts/
+│   └── default.html
+│
+├── assets/
+│   └── css/
+│       └── style.css
+│
+└── netlify.toml
