@@ -36,5 +36,12 @@ assets/img/
 → Add file
 → Upload kacie-speaking.jpg
 → Commit directly to main
-<img src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}">
+.
+├─ img/
+│   └── kacie-speaking.jpg   ✅
+├─ assets/
+│   └── site.css
+├─ index.md
+├─ _layouts/
+├─ _config.yml
 
