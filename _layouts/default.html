@@ -1,17 +1,14 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
 
-<section class="hero">
-  <h1>Kacie Wielgus (Buzzard)</h1>
-  <p>Speaker • Inclusion Consultant • Writer</p>
-  <a class="btn" href="#about">Learn more</a>
-</section>
-
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <p>Short bio goes here.</p>
-  </div>
-</section>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
