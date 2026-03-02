@@ -4,3 +4,4 @@ ls -la assets/img || true
 git status
 mkdir -p assets/img
 cp "/c/Users/kaciebuzzard/Downloads/kacie-speaking.jpg" "assets/img/kacie-speaking.jpg"
+cp "/c/Users/kaciebuzzard/Downloads/kacie-speaking.jpg" "assets/img/kacie-speaking.jpg"
