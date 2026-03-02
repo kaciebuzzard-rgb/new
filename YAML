@@ -7,7 +7,7 @@ permalink: pretty
 collections:
   excerpts:
     output: true
-    permalink: /excerpts/:name/
+   permalink: /excerpts/:name/
 
 include:
   - assets
