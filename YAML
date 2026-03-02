@@ -12,3 +12,6 @@ collections:
 
 include:
   - assets
+include:
+  - assets
+  - img
