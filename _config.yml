@@ -17,3 +17,5 @@ defaults:
 
 include:
   - assets
+baseurl: ""
+url: "https://kacie-wielgus.netlify.app"
