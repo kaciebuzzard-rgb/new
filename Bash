@@ -11,3 +11,4 @@ git push
 git add .
 git commit -m "Enable Jekyll build on Netlify"
 git push
+ls -la assets/css
