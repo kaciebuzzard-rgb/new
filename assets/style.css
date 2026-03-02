@@ -69,3 +69,13 @@ a:hover{text-decoration:underline}
   left:16px;top:16px;width:auto;height:auto;
   padding:10px 12px;border-radius:10px;background:#fff;border:1px solid #ddd;
 }
+/
+├── _config.yml
+├── netlify.toml
+├── index.html (or index.md)
+├── _layouts/
+│     └── default.html
+├── assets/
+│     ├── css/
+│     │     └── style.css
+│     └── img/
