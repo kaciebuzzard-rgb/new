@@ -13,3 +13,5 @@ assets/
 assets/css/style.css
 assets/img/.keep
 assets/img/kacie-speaking.jpg
+.ruby-version
+3.2.2
