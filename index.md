@@ -15,9 +15,9 @@
         <p>
           On rare disease, identity, and the girl behind the genetic report.
         </p>
-        <a class="btn btn-ghost" 
-           href="https://medium.com/@kwbuzzard" 
-           target="_blank" 
+        <a class="btn btn-ghost"
+           href="https://medium.com/@kwbuzzard"
+           target="_blank"
            rel="noopener">
           Read on Medium →
         </a>
@@ -28,9 +28,9 @@
         <p>
           On transitions, grief, and the quiet ache of change that no one else sees.
         </p>
-        <a class="btn btn-ghost" 
-           href="https://medium.com/@kwbuzzard" 
-           target="_blank" 
+        <a class="btn btn-ghost"
+           href="https://medium.com/@kwbuzzard"
+           target="_blank"
            rel="noopener">
           Read on Medium →
         </a>
@@ -41,9 +41,9 @@
         <p>
           Why caregivers cannot survive on depletion — and what self-preservation really costs.
         </p>
-        <a class="btn btn-ghost" 
-           href="https://medium.com/@kwbuzzard" 
-           target="_blank" 
+        <a class="btn btn-ghost"
+           href="https://medium.com/@kwbuzzard"
+           target="_blank"
            rel="noopener">
           Read on Medium →
         </a>
@@ -52,9 +52,9 @@
     </div>
 
     <div class="writing-cta">
-      <a class="btn" 
-         href="https://medium.com/@kwbuzzard" 
-         target="_blank" 
+      <a class="btn"
+         href="https://medium.com/@kwbuzzard"
+         target="_blank"
          rel="noopener">
         View All Essays on Medium
       </a>
