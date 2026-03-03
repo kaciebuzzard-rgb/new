@@ -1,357 +1,87 @@
-/* =========================
-   RESET
-========================= */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body{
-  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height: 1.7;
-  color: #222;
-  background: #f6f1e8;
-}
-a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; }
-img { max-width: 100%; display: block; }
+---
+layout: default
+title: Home
+permalink: /
+---
 
-/* =========================
-   LAYOUT
-========================= */
-.wrap{
-  width: min(1100px, 92%);
-  margin: 0 auto;
-}
-section{ padding: 84px 0; }
-.light{ background:#fff; }
+<section class="hero" id="top">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <h1>Where lived experience drives systems change.</h1>
+    <p>Keynotes and strategy that turn empathy into action—without the performative stuff.</p>
+    <a class="btn" href="#contact">Book a Keynote</a>
+  </div>
+</section>
 
-/* =========================
-   HEADER / NAV
-========================= */
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: #ffffff;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-}
-.nav{
-  width: min(1100px, 92%);
-  margin: 0 auto;
-  padding: 16px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-}
-.brand a{ font-weight: 700; font-size: 18px; }
-.brand small{ display:block; font-size:13px; opacity:.7; margin-top:2px; }
+<!-- BOOKS -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="section-header">
+      <h2>Books</h2>
+      <p class="section-intro">
+        Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.
+      </p>
+    </div>
 
-.nav-links a{ margin-left: 14px; font-weight: 500; opacity:.92; }
-.nav-links a.pill{
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 999px;
-  background: #e4572e;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-}
-.nav-links a.pill:hover{ filter: brightness(.95); }
+    <div class="grid book-grid">
+      <article class="card book-card">
+        <div class="book-cover">
+          <img
+            src="{{ '/assets/img/neurodiversity-workbook-for-parents.webp' | relative_url }}"
+            alt="Cover of Neurodiversity Workbook for Parents by Kacie Buzzard"
+            loading="lazy"
+          />
+        </div>
+        <div class="book-meta">
+          <p class="role-pill">Author</p>
+          <h3>Neurodiversity Workbook for Parents</h3>
+          <p class="muted">
+            A practical, compassionate workbook for parents navigating advocacy, communication, and support—without losing themselves in the process.
+          </p>
+          <div class="book-actions">
+            <a class="btn" href="#contact">Invite Kacie to speak</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
+          </div>
+          <p class="fineprint"><strong>Kacie Buzzard</strong></p>
+        </div>
+      </article>
 
-/* =========================
-   HERO
-========================= */
+      <article class="card book-card">
+        <div class="book-cover">
+          <img
+            src="{{ '/assets/img/for-the-love-of-autism.png' | relative_url }}"
+            alt="Cover of For the Love of Autism: Stories of Love, Awareness and Acceptance on the Spectrum"
+            loading="lazy"
+          />
+        </div>
+        <div class="book-meta">
+          <p class="role-pill role-pill--alt">Co-author</p>
+          <h3>For the Love of Autism</h3>
+          <p class="muted">
+            Stories and strategies rooted in lived experience—centering dignity, belonging, and what it really takes to build supportive communities.
+          </p>
+          <div class="book-actions">
+            <a class="btn" href="#contact">Book a keynote</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
+          </div>
+          <p class="fineprint"><strong>Kacie Buzzard</strong> (co-author)</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-.hero{
-  position: relative;
-  min-height: 78vh;
-  display: flex;
-  align-items: center;
-  padding: 96px 0;
-
-  /* IMPORTANT: set your hero background image here */
-  background: url("/assets/img/hero.jpg") center / cover no-repeat;
-}
-
-.hero-overlay{
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,.40);
-}
-
-.hero-content{
-  position: relative;
-  color: #fff;
-  max-width: 780px;
-}
-
-.hero-content h1{
-  font-size: clamp(36px, 4.8vw, 60px);
-  line-height: 1.08;
-  margin-bottom: 14px;
-}
-
-.hero-content p{
-  font-size: 18px;
-  opacity: .92;
-  max-width: 650px;
-}
-
-.hero-actions{
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 22px;
-}
-
-.btn{
-  display:inline-block;
-  padding: 12px 18px;
-  border-radius: 999px;
-  background: #e4572e;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,.18);
-}
-
-.btn:hover{ filter: brightness(.96); }
-
-.btn-ghost{
-  background: transparent;
-  border: 1px solid rgba(255,255,255,.45);
-}
-/* =========================
-   BOOK SECTION
-========================= */
-.book-cover--placeholder{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px dashed rgba(0,0,0,.2);
-  border-radius:16px;
-  min-height:220px;
-  background:rgba(255,255,255,.6);
-}
-.book-cover-fallback{
-  opacity:.7;
-  font-size:.95rem;
-}
-
-
-
-
-
-
-}
-
-.role-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  padding:6px 10px;
-  border-radius:999px;
-  background: rgba(228,87,46,.10);
-  color: #a53b21;
-}
-
-.role-pill--alt{
-  background: rgba(0,0,0,.06);
-  color: rgba(0,0,0,.70);
-}
-
-.book-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:14px;
-}
-
-.fineprint{
-  margin-top:12px;
-  font-size:14px;
-  opacity:.80;
-}
-
-/* Responsive */
-@media (max-width: 860px){
-  .book-grid{ grid-template-columns:1fr; }
-  .book-card{ grid-template-columns: 140px 1fr; }
-}
-@media (max-width: 520px){
-  .book-card{ grid-template-columns:1fr; }
-}
-
-
-
-
-
-
-
-
-.role-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  padding:6px 10px;
-  border-radius:999px;
-  background: rgba(228,87,46,.10);
-  color: #a53b21;
-}
-
-.role-pill--alt{
-  background: rgba(0,0,0,.06);
-  color: rgba(0,0,0,.70);
-}
-
-.book-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:14px;
-}
-
-.fineprint{
-  margin-top:12px;
-  font-size:14px;
-  opacity:.80;
-}
-
-/* Responsive */
-@media (max-width: 860px){
-  .book-grid{ grid-template-columns:1fr; }
-  .book-card{ grid-template-columns: 140px 1fr; }
-}
-@media (max-width: 520px){
-  .book-card{ grid-template-columns:1fr; }
-  .book-cover--placeholder{ min-height:200px; }
-}
-/* =========================
-   CARDS / GRID
-========================= */
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-top: 30px;
-}
-.card{
-  background:#fff;
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 22px rgba(0,0,0,.04);
-}
-.card h3{ margin-bottom: 10px; }
-
-/* =========================
-   BLOG / POST STYLES
-========================= */
-.post{ padding: 72px 0; }
-.post-wrap{ padding: 0 0 80px; }
-
-.post-header{ margin-bottom: 24px; }
-.post-meta{
-  font-size: 14px;
-  opacity: .75;
-  margin-bottom: 10px;
-}
-.post-meta .dot{ margin: 0 8px; }
-.post-title{
-  font-size: clamp(32px, 4vw, 52px);
-  line-height: 1.12;
-  margin-bottom: 10px;
-}
-.post-desc{
-  font-size: 18px;
-  opacity: .85;
-  max-width: 850px;
-}
-
-/* Photograph hero */
-.post-hero{
-  margin: 22px 0 28px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,.10);
-  background: #fff;
-  box-shadow: 0 10px 22px rgba(0,0,0,.06);
-}
-.post-hero img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Post content typography */
-.post-content{
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 10px 22px rgba(0,0,0,.04);
-}
-.post-content h2{
-  font-size: 28px;
-  margin: 26px 0 10px;
-  line-height: 1.2;
-}
-.post-content p{ margin: 14px 0; }
-.post-content ul{ margin: 12px 0 12px 22px; }
-.post-content li{ margin: 8px 0; }
-.post-content hr{
-  border: none;
-  border-top: 1px solid rgba(0,0,0,.10);
-  margin: 18px 0;
-}
-
-/* CTA at end */
-.post-cta{
-  margin-top: 26px;
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,.10);
-  background: #ffffff;
-  box-shadow: 0 10px 22px rgba(0,0,0,.04);
-}
-.post-cta h3{ margin-bottom: 8px; line-height: 1.2; }
-
-/* =========================
-   FOOTER
-========================= */
-footer{
-  border-top: 1px solid rgba(0,0,0,.08);
-  text-align: center;
-  padding: 28px 0 40px;
-  font-size: 14px;
-  opacity: .85;
-}
-
-/* =========================
-   ACCESSIBILITY
-========================= */
-.skip{
-  position: absolute;
-  left: -999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip:focus{
-  left: 16px;
-  top: 16px;
-  width: auto;
-  height: auto;
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: #ffffff;
-  border: 1px solid #ddd;
-}
+<!-- CONTACT (so buttons don’t dead-end) -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p class="section-intro">Speaking inquiries, collaborations, and media requests.</p>
+    </div>
+    <div class="card" style="padding:22px;">
+      <p class="muted" style="margin:0;">
+        Email: <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
