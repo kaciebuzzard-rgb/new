@@ -3,44 +3,108 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
+<section class="hero" id="top">
   <div class="wrap">
     <h1>Kacie Wielgus (Buzzard)</h1>
     <p>Speaker • Inclusion Consultant • Writer</p>
-    <a class="btn" href="#about">Learn more</a>
+    <a class="btn" href="#contact">Book Kacie</a>
   </div>
 </section>
 
 <section id="about">
   <div class="wrap">
     <h2>About</h2>
-    <p>Short bio goes here.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img
+          src="{{ '/assets/img/kacie-speaking.png' | relative_url }}"
+          alt="Kacie speaking"
+          style="width:100%; height:auto; border-radius:14px; margin-bottom:14px;"
+        >
+        <p>
+          Short bio goes here. (We can replace with your real copy when you’re ready.)
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>What I speak about</h3>
+        <p>Human-centered communication, inclusive leadership, and story-driven strategy.</p>
+        <p><a class="btn" href="#services">Speaking themes</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="services" class="light">
+<section id="services">
   <div class="wrap">
     <h2>Services</h2>
+
     <div class="grid">
-      <div class="card">
+      <div class="card" id="speaking">
         <h3>Speaking</h3>
         <p>Keynotes and workshops on human-centered communication and inclusive leadership.</p>
       </div>
+
+      <div class="card" id="consulting">
+        <h3>Inclusion Consulting</h3>
+        <p>Practical frameworks for accessibility, belonging, and communication that works.</p>
+      </div>
+
       <div class="card">
         <h3>Thought Leadership</h3>
         <p>Story-driven content and strategy that builds trust, clarity, and community.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="books">
+  <div class="wrap">
+    <h2>Books</h2>
+
+    <div class="grid">
       <div class="card">
-        <h3>Inclusion Consulting</h3>
-        <p>Practical frameworks for accessibility, belonging, and communication that works.</p>
+        <h3>The Waiting Rooms of My Life</h3>
+        <p>A memoir-in-progress about caregiving, systems, and the quiet cost of surviving.</p>
+        <p><a class="btn" href="/excerpts/">Read excerpts</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Neurodiversity Workbook for Parents</h3>
+        <p>Tools, prompts, and support for parents navigating advocacy, access, and identity.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="excerpts">
+  <div class="wrap">
+    <h2>Featured excerpts</h2>
+
+    <div class="grid">
+      {% assign featured = site.excerpts | slice: 0, 3 %}
+      {% for item in featured %}
+        <div class="card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.content | strip_html | truncate: 200 }}</p>
+          <p><a class="btn" href="{{ item.url | relative_url }}">Read more</a></p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <p style="margin-top:18px;">
+      <a class="btn" href="{{ '/excerpts/' | relative_url }}">View all excerpts</a>
+    </p>
   </div>
 </section>
 
 <section id="contact">
   <div class="wrap">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@kacies.life">hello@kacies.life</a></p>
+    <div class="card">
+      <p>Email: <a href="mailto:YOUR@email.com">YOUR@email.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/">Add your link</a></p>
+    </div>
   </div>
 </section>
