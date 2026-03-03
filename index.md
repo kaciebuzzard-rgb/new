@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 
 <!-- HERO -->
 <section class="hero" id="top">
   <img
     class="hero-bg"
-    src="{{ '/assets/img/kacie-speaking.jpg' | relative_url | uri_escape }}"
+    src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
     alt=""
     aria-hidden="true"
   />
@@ -47,7 +48,7 @@ title: Home
   </div>
 </section>
 
-<!-- BOOKS (moved further down + aligned) -->
+<!-- BOOKS -->
 <section id="books" class="books">
   <div class="wrap">
     <div class="section-header">
@@ -58,10 +59,8 @@ title: Home
     </div>
 
     <div class="grid book-grid">
-      <!-- Book 1 -->
       <article class="card book-card">
         <div class="book-icon" aria-hidden="true">
-          <!-- simple inline icon (no libraries needed) -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true">
             <path d="M6 4h11a2 2 0 0 1 2 2v14H8a2 2 0 0 0-2 2V4Z" stroke="currentColor" stroke-width="1.5"/>
             <path d="M6 18h13" stroke="currentColor" stroke-width="1.5"/>
@@ -83,7 +82,6 @@ title: Home
         </div>
       </article>
 
-      <!-- Book 2 -->
       <article class="card book-card">
         <div class="book-icon" aria-hidden="true">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true">
