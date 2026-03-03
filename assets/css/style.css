@@ -31,3 +31,17 @@
 .book-card .btn-primary{
   margin-top: auto;
 }
+.post-figure{
+  margin: 0 0 22px 0;
+}
+.post-figure img{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+.post-figure figcaption{
+  font-size: .95rem;
+  opacity: .75;
+  margin-top: 10px;
+}
