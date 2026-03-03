@@ -22,7 +22,9 @@ title: Home
   </div>
 </section>
 
-<!-- ABOUT -->
+
+
+<!-- <!-- ABOUT -->
 <section id="about">
   <div class="wrap">
     <div class="section-header">
@@ -45,7 +47,7 @@ title: Home
   </div>
 </section>
 
-<!-- BOOKS -->
+ -->
 <section id="books" class="light">
   <div class="wrap">
     <div class="section-header">
