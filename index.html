@@ -3,30 +3,43 @@ layout: default
 title: Home
 ---
 
-<section class="hero" id="top">
-  <div class="wrap">
-    <h1>Where Lived Experience Drives Systems Change.</h1>
-    <p>Keynotes and strategy that transform empathy into action.</p>
-    <a class="btn" href="#book">Book a Keynote</a>
+<section class="hero" id="top" 
+  style="
+    background-image: url('{{ '/assets/img/IMG_7220.jpg' | relative_url }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+  ">
+
+  <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      to right,
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.35)
+    );
+  "></div>
+
+  <div class="wrap" style="position:relative; z-index:2; padding:140px 20px;">
+    <h1 style="font-size:48px; max-width:800px;">
+      Where lived experience drives systems change.
+    </h1>
+
+    <p style="font-size:20px; max-width:650px; margin-top:20px;">
+      Keynotes and strategy that turn empathy into action—without the performative stuff.
+    </p>
+
+    <div style="margin-top:30px;">
+      <a class="btn" href="#book" style="font-size:18px; padding:14px 26px;">
+        Book a Keynote
+      </a>
+    </div>
   </div>
 </section>
-
-<section id="about">
-  <h2>About Kacie</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="{{ '/assets/img/kacie-speaking.png' | relative_url }}" alt="Kacie speaking">
-      <p>
-        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection of lived experience and systems change.
-      </p>
-      <p>
-        As a mother of a child with a rare genetic condition and a communications strategist with nearly two decades of experience, she brings both expertise and earned perspective to every room she enters.
-      </p>
-      <p>
-        Kacie speaks and writes about human-centered communication, invisible labor, advocacy, neurodiversity, and the structural realities families face behind closed doors — helping organizations move beyond performative inclusion into meaningful action.
-      </p>
-    </div>
 
     <div class="card">
       <h3>What sets her apart</h3>
