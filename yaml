@@ -1,12 +1,5 @@
-title: Kacie Wielgus (Buzzard)
-description: Speaker • Inclusion Consultant • Writer
-url: ""
-baseurl: ""
-markdown: kramdown
-theme: null
-permalink: pretty
-
-collections:
-  excerpts:
-    output: true
-    permalink: /excerpts/:name/
+---
+layout: default
+title: "Home"
+permalink: /
+---
