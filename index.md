@@ -30,16 +30,18 @@
             <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
           </div>
 
-          <p class="fineprint">
-            <strong>Kacie Buzzard</strong>
-          </p>
+          <p class="fineprint"><strong>Kacie Buzzard</strong></p>
         </div>
       </article>
 
       <!-- Book 2 -->
       <article class="card book-card">
-        <div class="book-cover book-cover--placeholder" aria-hidden="true">
-          <span>Cover image</span>
+        <div class="book-cover">
+          <img
+            src="{{ '/assets/img/for-the-love-of-autism.png' | relative_url }}"
+            alt="Cover of For the Love of Autism: Stories of Love, Awareness and Acceptance on the Spectrum"
+            loading="lazy"
+          />
         </div>
 
         <div class="book-meta">
@@ -54,9 +56,7 @@
             <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
           </div>
 
-          <p class="fineprint">
-            <strong>Kacie Buzzard</strong> (co-author)
-          </p>
+          <p class="fineprint"><strong>Kacie Buzzard</strong> (co-author)</p>
         </div>
       </article>
     </div>
