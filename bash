@@ -22,3 +22,6 @@ git add .gitignore
 git commit -m "Stop tracking build output"
 git push
 ls -la assets/img
+git add _layouts/default.html assets/css/styles.css index.md
+git commit -m "Restore layout, header, and homepage sections"
+git push
