@@ -28,3 +28,6 @@ git push
 git add Gemfile
 git commit -m "Fix Gemfile (remove non-Ruby lines)"
 git push
+git rm -r --cached _site 2>/dev/null || true
+git commit -m "Stop tracking _site"
+git push
