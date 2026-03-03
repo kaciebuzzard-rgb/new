@@ -31,3 +31,8 @@ git push
 git rm -r --cached _site 2>/dev/null || true
 git commit -m "Stop tracking _site"
 git push
+mkdir -p assets/css
+# create/edit the file locally (or paste your CSS into it)
+git add assets/css/styles.css
+git commit -m "Add site stylesheet"
+git push
