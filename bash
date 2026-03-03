@@ -9,3 +9,7 @@ grep -n "Where lived experience drives systems change" _site/index.html || echo 
 git add index.md
 git commit -m "Fix homepage permalink"
 git push
+git ls-files | grep "^_site/" | head
+ls -la | head -n 25
+grep -n "Where lived experience drives systems change" _site/index.html | head
+sed -n '1,40p' _layouts/default.html
