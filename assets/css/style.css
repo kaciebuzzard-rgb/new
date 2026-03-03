@@ -309,3 +309,18 @@ main{ padding-top: var(--header-h); }
   align-items:center;
   gap:12px;
 }
+/* =========================
+   BLOG
+========================= */
+.blog-grid{
+  display:grid;
+  gap:18px;
+}
+@media(min-width: 860px){
+  .blog-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+.blog-card a{ text-decoration:none; }
+.blog-title a:hover{ text-decoration:underline; }
+.blog-meta{ font-size: 13px; margin: 0 0 6px; }
+.blog-excerpt{ opacity:.85; margin-top:10px; }
+.blog-actions{ margin-top:14px; }
