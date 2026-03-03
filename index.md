@@ -3,11 +3,19 @@ layout: default
 title: Home
 ---
 
-# Where lived experience drives systems change.
+<section class="hero" id="top">
+  <div class="hero-overlay" aria-hidden="true"></div>
 
-Keynotes and strategy that turn empathy into action — without the performative stuff.
+  <div class="wrap hero-content">
+    <h1>Where lived experience drives systems change.</h1>
+    <p>Keynotes and strategy that turn empathy into action — without the performative stuff.</p>
 
-[Book a Keynote](#book)
+    <div class="hero-actions">
+      <a class="btn" href="#book">Book a Keynote</a>
+      <a class="btn btn-ghost" href="#services">Explore Services</a>
+    </div>
+  </div>
+</section>
 
 <section id="about" class="light">
   <div class="wrap about-grid">
