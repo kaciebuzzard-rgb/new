@@ -36,3 +36,6 @@ mkdir -p assets/css
 git add assets/css/styles.css
 git commit -m "Add site stylesheet"
 git push
+git add _config.yml
+git commit -m "Ensure assets are included in build"
+git push
