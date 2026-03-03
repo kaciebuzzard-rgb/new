@@ -42,3 +42,6 @@ git push
 git mv layouts/default.html _layouts/default.html
 git commit -m "Move layout to correct _layouts folder"
 git push
+git mv assets/css/style.css assets/css/styles.css
+git commit -m "Rename stylesheet to match layout link"
+git push
