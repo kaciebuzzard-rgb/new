@@ -5,10 +5,12 @@ title: Home
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <img class="hero-bg"
-       src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
-       alt=""
-       aria-hidden="true" />
+  <img
+    class="hero-bg"
+    src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
+    alt=""
+    aria-hidden="true"
+  />
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="wrap hero-content">
@@ -22,10 +24,8 @@ title: Home
   </div>
 </section>
 
-
-
-<!-- <!-- ABOUT -->
-<section id="about">
+<!-- ABOUT -->
+<section id="about" class="light">
   <div class="wrap">
     <div class="section-header">
       <h2>About</h2>
@@ -47,7 +47,7 @@ title: Home
   </div>
 </section>
 
- -->
+<!-- BOOKS -->
 <section id="books" class="light">
   <div class="wrap">
     <div class="section-header">
@@ -100,8 +100,11 @@ title: Home
     <div class="excerpt-grid">
       <article class="card excerpt-tile">
         <div class="excerpt-media">
-          <img src="{{ '/assets/img/hospital-hallway.png' | relative_url }}"
-               alt="Moody hospital hallway in cool tones with title text overlay." />
+          <img
+            src="{{ '/assets/img/hospital-hallway.png' | relative_url }}"
+            alt="Moody hospital hallway in cool tones with title text overlay."
+            loading="lazy"
+          />
         </div>
         <div class="excerpt-body">
           <h3>The Hospital Hallway Where Time Collapses</h3>
@@ -114,8 +117,11 @@ title: Home
 
       <article class="card excerpt-tile">
         <div class="excerpt-media">
-          <img src="{{ '/assets/img/when-no-one-is-calling.png' | relative_url }}"
-               alt="Soft, muted scene with title text overlay." />
+          <img
+            src="{{ '/assets/img/when-no-one-is-calling.png' | relative_url }}"
+            alt="Soft, muted scene with title text overlay."
+            loading="lazy"
+          />
         </div>
         <div class="excerpt-body">
           <h3>When No One Is Calling</h3>
@@ -128,8 +134,11 @@ title: Home
 
       <article class="card excerpt-tile">
         <div class="excerpt-media">
-          <img src="{{ '/assets/img/invisible-tax.png' | relative_url }}"
-               alt="Hands signing paperwork, representing invisible labor." />
+          <img
+            src="{{ '/assets/img/invisible-tax.png' | relative_url }}"
+            alt="Hands signing paperwork, representing invisible labor."
+            loading="lazy"
+          />
         </div>
         <div class="excerpt-body">
           <h3>The Invisible Tax of Invisible Labor</h3>
@@ -148,7 +157,9 @@ title: Home
   <div class="wrap">
     <div class="section-header">
       <h2>Services</h2>
-      <p class="section-intro">Speaking, consulting, and thought leadership rooted in lived experience and practical systems change.</p>
+      <p class="section-intro">
+        Speaking, consulting, and thought leadership rooted in lived experience and practical systems change.
+      </p>
     </div>
 
     <div class="grid">
@@ -173,7 +184,9 @@ title: Home
   <div class="wrap">
     <div class="section-header">
       <h2>Contact</h2>
-      <p class="section-intro">Let’s talk about your audience, your goals, and what “support” needs to look like in practice.</p>
+      <p class="section-intro">
+        Let’s talk about your audience, your goals, and what “support” needs to look like in practice.
+      </p>
     </div>
 
     <div class="card">
