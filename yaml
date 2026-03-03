@@ -31,3 +31,6 @@ defaults:
       type: excerpts
     values:
       layout: excerpt
+
+      image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80
+image_alt: "Person signing paperwork at a desk with documents spread out."
