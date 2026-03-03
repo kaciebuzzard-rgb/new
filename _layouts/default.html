@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }}{% if site.title %} • {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description | default: page.description | strip_html | strip_newlines | escape }}">
-
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}#book">Books</a>
-      <a href="{{ '/' | relative_url }}#contact">Contact</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="{{ '/excerpts/' | relative_url }}">Excerpts</a>
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title | default: "Kacie Wielgus (Buzzard)" }}</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#writing">Writing</a>
+      <a href="#services">Services</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -25,12 +27,6 @@
 <main>
   {{ content }}
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
-  </div>
-</footer>
 
 </body>
 </html>
