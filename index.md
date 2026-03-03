@@ -111,6 +111,7 @@ title: Home
 <!-- SELECTED WRITING -->
 <section id="writing">
   <div class="wrap">
+
     <div class="section-header">
       <h2>Selected Writing</h2>
       <p class="section-intro">
@@ -118,57 +119,56 @@ title: Home
       </p>
     </div>
 
-    <div class="excerpt-grid">
-      <article class="card excerpt-tile">
-        <div class="excerpt-media">
-          <img
-            src="{{ '/assets/img/hospital-hallway.png' | relative_url }}"
-            alt="Moody hospital hallway in cool tones with title text overlay."
-            loading="lazy"
-          />
+    <div class="writing-grid">
+
+      <!-- Hospital Essay -->
+      <article class="writing-card">
+        <div class="writing-image">
+          <img src="{{ '/assets/img/holding_on_in_silence.png' | relative_url }}" alt="Woman holding a patient's hand in a hospital room">
         </div>
-        <div class="excerpt-body">
+
+        <div class="writing-content">
           <h3>The Hospital Hallway Where Time Collapses</h3>
           <p>Why trauma refuses to stay in the past.</p>
-        </div>
-        <div class="excerpt-actions">
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
+            Read on Medium →
+          </a>
         </div>
       </article>
 
-      <article class="card excerpt-tile">
-        <div class="excerpt-media">
-          <img
-            src="{{ '/assets/img/when-no-one-is-calling.png' | relative_url }}"
-            alt="Soft, muted scene with title text overlay."
-            loading="lazy"
-          />
+      <!-- Invisible Tax -->
+      <article class="writing-card">
+        <div class="writing-image">
+          <img src="{{ '/assets/img/packing_for_tragedy.jpg' | relative_url }}" alt="Open bag showing items packed for hospital visits">
         </div>
-        <div class="excerpt-body">
+
+        <div class="writing-content">
+          <h3>The Invisible Tax of Caregiving</h3>
+          <p>The administrative cost nobody budgets for.</p>
+
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
+            Read on Medium →
+          </a>
+        </div>
+      </article>
+
+      <!-- Quiet After Survival -->
+      <article class="writing-card">
+        <div class="writing-image">
+          <img src="{{ '/assets/img/when_no_one_is_calling.png' | relative_url }}" alt="Quiet window seat with blanket and books">
+        </div>
+
+        <div class="writing-content">
           <h3>When No One Is Calling</h3>
           <p>What happens after survival becomes quiet.</p>
-        </div>
-        <div class="excerpt-actions">
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
+            Read on Medium →
+          </a>
         </div>
       </article>
 
-      <article class="card excerpt-tile">
-        <div class="excerpt-media">
-          <img
-            src="{{ '/assets/img/invisible-tax.png' | relative_url }}"
-            alt="Hands signing paperwork, representing invisible labor."
-            loading="lazy"
-          />
-        </div>
-        <div class="excerpt-body">
-          <h3>The Invisible Tax of Invisible Labor</h3>
-          <p>The administrative cost nobody budgets for.</p>
-        </div>
-        <div class="excerpt-actions">
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
-        </div>
-      </article>
     </div>
   </div>
 </section>
