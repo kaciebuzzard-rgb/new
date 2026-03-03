@@ -1,45 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/path/to/your/style.css">
-    <title>Document</title>
-    <style>
-      /* Updated CSS for page styles */
-      body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-      }
-      header { 
-          background-color: #f8f9fa;
-          padding: 1rem;
-          text-align: center;
-      }
-      main { 
-          padding: 1rem;
-          margin: 0 10%;
-      }
-      footer { 
-          background-color: #f8f9fa;
-          padding: 1rem;
-          text-align: center;
-          position: relative;
-          bottom: 0;
-          width: 100%;
-      }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}{% if site.title %} • {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description | default: page.description | strip_html | strip_newlines | escape }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is a sample main content area.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Your Name</p>
-    </footer>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}#book">Books</a>
+      <a href="{{ '/' | relative_url }}#contact">Contact</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/excerpts/' | relative_url }}">Excerpts</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
+  </div>
+</footer>
+
 </body>
 </html>
