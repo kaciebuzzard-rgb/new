@@ -48,3 +48,8 @@ git push
 git mv assets/css/style.css assets/css/styles.css
 git commit -m "Rename stylesheet to styles.css"
 git push
+ls -la assets/img
+git status
+git ls-files | grep -i "holding"
+git ls-files | grep -i "packing"
+git ls-files | grep -i "when"
