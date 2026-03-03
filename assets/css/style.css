@@ -1,87 +1,49 @@
----
-layout: default
-title: Home
-permalink: /
----
+/* =========================
+   HEADER (FIXED + ABOVE HERO)
+========================= */
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* ensures it sits above hero bg/overlay */
+  background: rgba(255,255,255,.92);
+  border-bottom: 1px solid rgba(0,0,0,.10);
+  backdrop-filter: blur(8px);
+}
 
-<section class="hero" id="top">
-  <div class="hero-overlay"></div>
-  <div class="wrap hero-content">
-    <h1>Where lived experience drives systems change.</h1>
-    <p>Keynotes and strategy that turn empathy into action—without the performative stuff.</p>
-    <a class="btn" href="#contact">Book a Keynote</a>
-  </div>
-</section>
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+}
 
-<!-- BOOKS -->
-<section id="book" class="book">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>Books</h2>
-      <p class="section-intro">
-        Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.
-      </p>
-    </div>
+.brand{
+  font-weight: 800;
+  text-decoration: none;
+}
 
-    <div class="grid book-grid">
-      <article class="card book-card">
-        <div class="book-cover">
-          <img
-            src="{{ '/assets/img/neurodiversity-workbook-for-parents.webp' | relative_url }}"
-            alt="Cover of Neurodiversity Workbook for Parents by Kacie Buzzard"
-            loading="lazy"
-          />
-        </div>
-        <div class="book-meta">
-          <p class="role-pill">Author</p>
-          <h3>Neurodiversity Workbook for Parents</h3>
-          <p class="muted">
-            A practical, compassionate workbook for parents navigating advocacy, communication, and support—without losing themselves in the process.
-          </p>
-          <div class="book-actions">
-            <a class="btn" href="#contact">Invite Kacie to speak</a>
-            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
-          </div>
-          <p class="fineprint"><strong>Kacie Buzzard</strong></p>
-        </div>
-      </article>
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap: 16px;
+}
 
-      <article class="card book-card">
-        <div class="book-cover">
-          <img
-            src="{{ '/assets/img/for-the-love-of-autism.png' | relative_url }}"
-            alt="Cover of For the Love of Autism: Stories of Love, Awareness and Acceptance on the Spectrum"
-            loading="lazy"
-          />
-        </div>
-        <div class="book-meta">
-          <p class="role-pill role-pill--alt">Co-author</p>
-          <h3>For the Love of Autism</h3>
-          <p class="muted">
-            Stories and strategies rooted in lived experience—centering dignity, belonging, and what it really takes to build supportive communities.
-          </p>
-          <div class="book-actions">
-            <a class="btn" href="#contact">Book a keynote</a>
-            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">View / Buy →</a>
-          </div>
-          <p class="fineprint"><strong>Kacie Buzzard</strong> (co-author)</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+.nav-links a{
+  text-decoration:none;
+  opacity:.86;
+}
 
-<!-- CONTACT (so buttons don’t dead-end) -->
-<section id="contact">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>Contact</h2>
-      <p class="section-intro">Speaking inquiries, collaborations, and media requests.</p>
-    </div>
-    <div class="card" style="padding:22px;">
-      <p class="muted" style="margin:0;">
-        Email: <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a>
-      </p>
-    </div>
-  </div>
-</section>
+.nav-links a:hover{
+  opacity:1;
+}
+
+.nav-cta{
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.18);
+}
+
+/* Offset page content so fixed header doesn't cover hero */
+main{ padding-top: 72px; }
