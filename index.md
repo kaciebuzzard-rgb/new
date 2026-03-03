@@ -1,44 +1,63 @@
----
-layout: default
-title: Home
----
+<section id="writing" class="light">
+  <div class="wrap writing-section">
 
-<section class="hero" id="top">
-  <div class="hero-overlay" aria-hidden="true"></div>
-
-  <div class="wrap hero-content">
-    <h1>Where lived experience drives systems change.</h1>
-    <p>Keynotes and strategy that turn empathy into action — without the performative stuff.</p>
-
-    <div class="hero-actions">
-      <a class="btn" href="#book">Book a Keynote</a>
-      <a class="btn btn-ghost" href="#services">Explore Services</a>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="light">
-  <div class="wrap about-grid">
-
-    <div class="about-image">
-      <img src="/assets/img/kacie-about.jpg" alt="Kacie smiling, wearing a 'Celebrate Minds of All Kinds' shirt." />
+    <div class="section-header">
+      <h2>Selected Writing</h2>
+      <p class="section-intro">
+        Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.
+      </p>
     </div>
 
-    <div class="about-content">
-      <h2>About Kacie</h2>
+    <div class="grid writing-grid">
 
-      <p>
-        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection of lived experience and systems change.
-      </p>
+      <article class="card writing-card">
+        <h3>Caroline and DDX3X: More Than a Diagnosis</h3>
+        <p>
+          On rare disease, identity, and the girl behind the genetic report.
+        </p>
+        <a class="btn btn-ghost" 
+           href="https://medium.com/@kwbuzzard" 
+           target="_blank" 
+           rel="noopener">
+          Read on Medium →
+        </a>
+      </article>
 
-      <p>
-        With more than 16 years in communications strategy and brand leadership, she helps organizations move beyond performative empathy and into sustainable impact.
-      </p>
+      <article class="card writing-card">
+        <h3>The End of an Era</h3>
+        <p>
+          On transitions, grief, and the quiet ache of change that no one else sees.
+        </p>
+        <a class="btn btn-ghost" 
+           href="https://medium.com/@kwbuzzard" 
+           target="_blank" 
+           rel="noopener">
+          Read on Medium →
+        </a>
+      </article>
 
-      <p>
-        Her work centers human dignity, measurable change, and the belief that lived experience is powerful expertise.
-      </p>
+      <article class="card writing-card">
+        <h3>Putting My Oxygen Mask On First</h3>
+        <p>
+          Why caregivers cannot survive on depletion — and what self-preservation really costs.
+        </p>
+        <a class="btn btn-ghost" 
+           href="https://medium.com/@kwbuzzard" 
+           target="_blank" 
+           rel="noopener">
+          Read on Medium →
+        </a>
+      </article>
 
+    </div>
+
+    <div class="writing-cta">
+      <a class="btn" 
+         href="https://medium.com/@kwbuzzard" 
+         target="_blank" 
+         rel="noopener">
+        View All Essays on Medium
+      </a>
     </div>
 
   </div>
