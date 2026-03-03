@@ -123,44 +123,25 @@ section{ padding: 84px 0; }
 /* =========================
    BOOK SECTION
 ========================= */
-.book .section-header{
-  margin-bottom:28px;
+.book-cover--placeholder{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px dashed rgba(0,0,0,.2);
+  border-radius:16px;
+  min-height:220px;
+  background:rgba(255,255,255,.6);
 }
-.section-intro{
-  max-width:760px;
-  opacity:.78;
-}
-
-.book-grid{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap:22px;
-}
-
-.book-card{
-  display:grid;
-  grid-template-columns: 160px 1fr;
-  gap:18px;
-  align-items:start;
-  padding:18px;
+.book-cover-fallback{
+  opacity:.7;
+  font-size:.95rem;
 }
 
-.book-cover{
-  border-radius:14px;
-  overflow:hidden;
-  border:1px solid rgba(0,0,0,.08);
-  background:#fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
-}
 
-.book-cover img{
-  width:100%;
-  height:auto;
-  display:block;
-}
 
-.book-meta h3{
-  margin:6px 0 10px;
+
+
+
 }
 
 .role-pill{
