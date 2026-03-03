@@ -16,3 +16,9 @@ sed -n '1,40p' _layouts/default.html
 git add _config.yml
 git commit -m "Fix config url/baseurl"
 git push
+git rm -r --cached _site
+printf "_site/\n.jekyll-cache/\n.sass-cache/\n.bundle/\nvendor/\n" > .gitignore
+git add .gitignore
+git commit -m "Stop tracking build output"
+git push
+ls -la assets/img
