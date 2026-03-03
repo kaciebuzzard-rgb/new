@@ -1,15 +1,11 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 
-<!-- HERO -->
 <section class="hero" id="top">
-  <img class="hero-bg"
-       src="{{ '/assets/img/kacie-speaking.jpg' | relative_url | uri_escape }}"
-       alt=""
-       aria-hidden="true">
-
+  <img class="hero-bg" src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}" alt="" aria-hidden="true" />
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="wrap hero-content">
@@ -23,185 +19,85 @@ title: Home
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="wrap">
-    <h2>About</h2>
+    <div class="section-header">
+      <h2>About</h2>
+      <p class="section-intro">I help organizations move beyond performative empathy into systems that actually support people.</p>
+    </div>
+
     <div class="card">
-      <p>
-        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the
-        intersection of lived experience and systems change.
-      </p>
-      <p>
-        She helps organizations move beyond performative empathy into systems that actually support people.
-      </p>
+      <p>Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection of lived experience and systems change.</p>
+      <p>Her talks and partnerships translate complexity into clarity—so teams can build policies, programs, and communication that hold up in real life.</p>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="wrap">
-    <h2>Services</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Speaking</h3>
-        <p>Keynotes on human-centered communication, invisible labor, disability, and leadership rooted in lived experience.</p>
-      </div>
-
-      <div class="card">
-        <h3>Inclusion Consulting</h3>
-        <p>Accessibility strategy and systems thinking that holds up in real life.</p>
-      </div>
-
-      <div class="card">
-        <h3>Thought Leadership</h3>
-        <p>Writing and workshops that translate complexity into clarity.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIVIDER (adds visual separation so Books sits lower) -->
-<section class="section-divider" aria-hidden="true">
-  <div class="wrap"><hr></div>
-</section>
-
-<!-- BOOKS -->
 <section id="books" class="books">
   <div class="wrap">
-
     <div class="section-header">
       <h2>Books & Publications</h2>
-      <p class="section-intro">
-        Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.
-      </p>
+      <p class="section-intro">Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.</p>
     </div>
 
     <div class="grid book-grid">
-
-      <!-- Book 1 -->
       <article class="card book-card">
-        <div class="book-top">
-          <div class="book-icon" aria-hidden="true">📘</div>
-          <p class="role-pill">Author</p>
-        </div>
-
-        <div class="book-cover">
-          <img
-            src="{{ '/assets/img/neurodiversity-workbook-for-parents.webp' | relative_url | uri_escape }}"
-            alt="Cover of The Neurodiversity Workbook for Parents"
-            loading="lazy"
-          />
-        </div>
-
+        <p class="role-pill">Author</p>
         <h3>The Neurodiversity Workbook for Parents</h3>
-        <p class="muted book-desc">
-          A practical and compassionate guide helping families navigate neurodiversity, advocacy, and everyday caregiving.
-        </p>
-
+        <p class="muted book-desc">A practical and compassionate guide helping families navigate neurodiversity, advocacy, and everyday caregiving—without losing themselves in the process.</p>
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/06KBZVK1" target="_blank" rel="noopener">View on Amazon →</a>
+          <a class="btn" href="#contact">Invite Kacie to speak</a>
         </div>
       </article>
 
-      <!-- Book 2 -->
       <article class="card book-card">
-        <div class="book-top">
-          <div class="book-icon" aria-hidden="true">📗</div>
-          <p class="role-pill role-pill--alt">Co-author</p>
-        </div>
-
-        <div class="book-cover">
-          <img
-            src="{{ '/assets/img/for-the-love-of-autism.png' | relative_url | uri_escape }}"
-            alt="Cover of For the Love of Autism"
-            loading="lazy"
-          />
-        </div>
-
+        <p class="role-pill role-pill--alt">Co-author</p>
         <h3>For the Love of Autism</h3>
-        <p class="muted book-desc">
-          A collaborative collection sharing lived experience, advocacy journeys, and perspectives from families raising autistic children.
-        </p>
-
+        <p class="muted book-desc">A collaborative collection sharing lived experiences, advocacy journeys, and perspectives from families raising autistic children.</p>
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/0be2TFl6" target="_blank" rel="noopener">View on Amazon →</a>
+          <a class="btn" href="#contact">Book a keynote</a>
         </div>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- THE WAITING ROOMS (EXCERPTS) -->
-<section id="waiting-rooms" class="light">
+<section id="excerpts" class="excerpts">
   <div class="wrap">
     <div class="section-header">
-      <h2>The Waiting Rooms of My Life</h2>
-      <p class="section-intro">Selected excerpts from a memoir-in-progress.</p>
+      <h2>Excerpts</h2>
+      <p class="section-intro">Three selections from <em>The Waiting Rooms of My Life</em>.</p>
     </div>
 
-    <div class="grid writing-grid">
-
-      <article class="card writing-card">
-        <img
-          src="{{ '/assets/img/The comfort of waiting hands.png' | relative_url | uri_escape }}"
-          alt="Cover image: The Waiting Rooms of My Life — hands holding in a hospital room"
-          loading="lazy"
-          style="border-radius:16px; margin-bottom:14px;"
-        />
-        <p>
-          “You promise I’m going to be okay?” The question lands in my chest like a blow. I lean close so only she can hear me.
-          “I promise we’re doing everything possible,” I say. “And I promise I’ll be right here when you wake up.” “You won’t leave?”
-          “I won’t leave.” They change her gown and adjust her IV lines, speaking in soft, practiced voices. Every time someone touches her,
-          her fingers tighten around mine. At the double doors, they stop us—parents only. I hate that rule.
-        </p>
+    <div class="excerpts-grid">
+      <article class="excerpt-card">
+        <img class="excerpt-img" src="{{ '/assets/img/hospital-hallway-in-cool-tones.png' | relative_url }}" alt="Hospital hallway in cool tones">
+        <h3 class="excerpt-title">The Hospital Hallway</h3>
+        <p class="excerpt-sub">Why trauma refuses to stay in the past.</p>
       </article>
 
-      <article class="card writing-card">
-        <img
-          src="{{ '/assets/img/Waiting for life%27s next chapter.png' | relative_url | uri_escape }}"
-          alt="Cover image: The Waiting Rooms of My Life — an open bag with essentials packed"
-          loading="lazy"
-          style="border-radius:16px; margin-bottom:14px;"
-        />
-        <p>
-          I am not packing for a trip. I am packing to wait. “When she’ll need surgery,” my mother says. “He can have a team ready in two hours.”
-          Two hours. Something inside me goes quiet. Not panic. Not tears. Absence. Halfway through packing, I stop. This could be bad.
-          I pull out my black suit—the one for funerals and courtrooms and rooms where lives are decided. I pack my laptop, snacks, a phone charger,
-          an extra sweatshirt.
-        </p>
+      <article class="excerpt-card">
+        <img class="excerpt-img" src="{{ '/assets/img/the-waiting-rooms-of-my-life.png' | relative_url }}" alt="The Waiting Rooms of My Life title on soft hospital background">
+        <h3 class="excerpt-title">The Waiting Rooms of My Life</h3>
+        <p class="excerpt-sub">A memoir-in-progress about what systems cost.</p>
       </article>
 
-      <article class="card writing-card">
-        <img
-          src="{{ '/assets/img/a moody, cinematic h.png' | relative_url | uri_escape }}"
-          alt="Cover image: The Waiting Rooms of My Life — an empty waiting room in cool tones"
-          loading="lazy"
-          style="border-radius:16px; margin-bottom:14px;"
-        />
-        <p>
-          The doors close. The waiting room stretches time until it feels thin enough to tear. Minutes swell into hours. My father lowers himself into a chair.
-          When my mother suggests he rest, he shakes his head. “I’m not missing this,” he says, staring straight ahead. Outside, Johnny and I light cigarettes.
-          “You think she’s scared?” he asks. “Yes.” “You scared?” “Yes.” That’s all there is to say. When I walk back inside, the chair beside my mother is empty.
-          Everything looks different.
-        </p>
+      <article class="excerpt-card">
+        <img class="excerpt-img" src="{{ '/assets/img/waiting-for-lifes-next-chapter.png' | relative_url }}" alt="Open bag on warm textured background">
+        <h3 class="excerpt-title">When No One Is Calling</h3>
+        <p class="excerpt-sub">What happens after survival gets quiet.</p>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- SELECTED WRITING -->
-<section id="writing">
+<section id="writing" class="light">
   <div class="wrap">
     <div class="section-header">
       <h2>Selected Writing</h2>
-      <p class="section-intro">
-        Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.
-      </p>
+      <p class="section-intro">Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.</p>
     </div>
 
     <div class="grid writing-grid">
@@ -223,17 +119,40 @@ title: Home
         <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
       </article>
     </div>
+  </div>
+</section>
 
-    <div class="writing-cta">
-      <a class="btn" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">View All Essays on Medium</a>
+<section id="services">
+  <div class="wrap">
+    <div class="section-header">
+      <h2>Services</h2>
+      <p class="section-intro">Speaking, consulting, and thought leadership rooted in lived experience and practical systems change.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Speaking</h3>
+        <p>Keynotes on human-centered communication, invisible labor, disability, and leadership rooted in lived experience.</p>
+      </div>
+      <div class="card">
+        <h3>Inclusion Consulting</h3>
+        <p>Accessibility strategy and systems thinking that hold up in real life.</p>
+      </div>
+      <div class="card">
+        <h3>Thought Leadership</h3>
+        <p>Writing and workshops that translate complexity into clarity.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p class="section-intro">Speaking inquiries, collaborations, and media requests.</p>
+    </div>
+
     <div class="card">
       <p><strong>Email:</strong> <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">linkedin.com/in/kwbuzzard</a></p>
