@@ -1,32 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }}{% if site.title %} • {{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description | default: page.description | strip_html | strip_newlines | escape }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Gallery</title>
 </head>
-
 <body>
-
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title | default: "Kacie Wielgus (Buzzard)" }}</a>
-
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#books">Books</a>
-      <a href="#writing">Writing</a>
-      <a href="#services">Services</a>
-      <a class="nav-cta" href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  {{ content }}
-</main>
-
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="path/to/image1.jpg" alt="Image 1 description" />
+            <p>Image 1 caption</p>
+        </div>
+        <div class="gallery-item">
+            <img src="path/to/image2.jpg" alt="Image 2 description" />
+            <p>Image 2 caption</p>
+        </div>
+        <div class="gallery-item">
+            <img src="path/to/image3.jpg" alt="Image 3 description" />
+            <p>Image 3 caption</p>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
 </body>
 </html>
