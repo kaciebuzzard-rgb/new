@@ -3,36 +3,16 @@ layout: default
 title: Home
 ---
 
-<section class="hero" id="top" 
-  style="
-    background-image: url('{{ '/assets/img/IMG_7220.jpg' | relative_url }}');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-  ">
+<section class="hero" id="top">
+  <div class="hero-overlay"></div>
 
-  <div style="
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-      to right,
-      rgba(0,0,0,.75),
-      rgba(0,0,0,.55),
-      rgba(0,0,0,.35)
-    );
-  "></div>
-
-  <div class="wrap" style="position:relative; z-index:2; padding:140px 20px;">
-    <h1 style="font-size:48px; max-width:800px;">
-      Where lived experience drives systems change.
-    </h1>
-
-    <p style="font-size:20px; max-width:650px; margin-top:20px;">
-      Keynotes and strategy that turn empathy into action—without the performative stuff.
-    </p>
-
+  <div class="wrap hero-content">
+    <h1>Where lived experience drives systems change.</h1>
+    <p>Keynotes and strategy that turn empathy into action—without the performative stuff.</p>
+    <a class="btn" href="#book">Book a Keynote</a>
+  </div>
+  
+</section>
     <div style="margin-top:30px;">
       <a class="btn" href="#book" style="font-size:18px; padding:14px 26px;">
         Book a Keynote
