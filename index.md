@@ -85,7 +85,7 @@ title: Home
   </div>
 </section>
 
-<!-- SELECTED WRITING (3 across w/ images + captions) -->
+<!-- SELECTED WRITING -->
 <section id="writing">
   <div class="wrap">
     <div class="section-header">
