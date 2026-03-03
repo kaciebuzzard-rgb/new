@@ -1,72 +1,29 @@
----
-layout: default
-title: Home
----
+title: "Kacie Wielgus (Buzzard)"
+description: "Speaker • Inclusion Consultant • Writer"
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <!-- IMPORTANT: change filename to match what you actually have -->
-  <img class="hero-bg" src="{{ '/kacie-speaking.png' | relative_url }}" alt="" aria-hidden="true">
-  <div class="hero-overlay" aria-hidden="true"></div>
+url: ""
+baseurl: ""
 
-  <div class="wrap hero-content">
-    <h1>Where lived experience drives systems change.</h1>
-    <p>Keynotes and strategy that turn empathy into action—without the performative stuff.</p>
+markdown: kramdown
+theme: null
 
-    <div class="hero-actions">
-      <a class="btn" href="#book">Book a Keynote</a>
-      <a class="btn btn-ghost" href="#services">Explore Services</a>
-    </div>
-  </div>
-</section>
+permalink: pretty
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <div class="card">
-      <p>
-        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection
-        of lived experience and systems change.
-      </p>
-      <p>
-        She translates complex human realities into strategy organizations can act on—without the performative stuff.
-      </p>
-    </div>
-  </div>
-</section>
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="wrap">
-    <h2>Services</h2>
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
-    <div class="grid">
-      <div class="card">
-        <h3>Speaking</h3>
-        <p>Keynotes on human-centered communication, invisible labor, disability advocacy, and leadership rooted in lived experience.</p>
-      </div>
-
-      <div class="card">
-        <h3>Inclusion Consulting</h3>
-        <p>Practical accessibility and communications strategy that holds up in the real world.</p>
-      </div>
-
-      <div class="card">
-        <h3>Thought Leadership</h3>
-        <p>Writing and workshops that turn complexity into clarity—and clarity into action.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOK -->
-<section id="book">
-  <div class="wrap">
-    <h2>Book Kacie</h2>
-    <div class="card">
-      <p><strong>Email:</strong> <a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">linkedin.com/in/kwbuzzard</a></p>
-    </div>
-  </div>
-</section>
+include:
+  - assets
