@@ -25,3 +25,6 @@ ls -la assets/img
 git add _layouts/default.html assets/css/styles.css index.md
 git commit -m "Restore layout, header, and homepage sections"
 git push
+git add Gemfile
+git commit -m "Fix Gemfile (remove non-Ruby lines)"
+git push
