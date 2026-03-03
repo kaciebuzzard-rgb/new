@@ -45,3 +45,6 @@ git push
 git mv assets/css/style.css assets/css/styles.css
 git commit -m "Rename stylesheet to match layout link"
 git push
+git mv assets/css/style.css assets/css/styles.css
+git commit -m "Rename stylesheet to styles.css"
+git push
