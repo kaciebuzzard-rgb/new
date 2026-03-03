@@ -1,45 +1,57 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>
+      {% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: "Kacie Wielgus (Buzzard)" }}
+    </title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
-</head>
+    {% if page.description %}
+      <meta name="description" content="{{ page.description | strip_html | strip_newlines | escape }}" />
+    {% endif %}
 
-<body>
-  <header class="site-header">
-    <div class="wrap nav">
-      <div class="brand">
-        <a href="{{ '/' | relative_url }}">
-          {{ site.title }}
-          <small>{{ site.description }}</small>
-        </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav">
+        <div class="brand">
+          <a href="{{ '/' | relative_url }}">
+            {{ site.title | default: "Kacie Wielgus (Buzzard)" }}
+          </a>
+          {% if site.description %}
+            <small>{{ site.description }}</small>
+          {% endif %}
+        </div>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#services">Services</a>
+          <a href="{{ '/' | relative_url }}#books">Books</a>
+          <a href="{{ '/excerpts/' | relative_url }}">Excerpts</a>
+          <a href="{{ '/blog/' | relative_url }}">Blog</a>
+          <a class="pill" href="{{ '/' | relative_url }}#book">Book Kacie</a>
+        </nav>
       </div>
+    </header>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
-        <a href="{{ '/' | relative_url }}#excerpts">Excerpts</a>
-        <a class="pill" href="{{ '/' | relative_url }}#book">Book a Keynote</a>
-      </nav>
-    </div>
-  </header>
+    <main id="main">
+      {{ content }}
+    </main>
 
-  <main id="main">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="wrap">
+        © {{ site.time | date: '%Y' }} {{ site.title | default: "Kacie Wielgus (Buzzard)" }}. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
