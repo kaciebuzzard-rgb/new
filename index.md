@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Home
-permalink: /
 ---
 
+<!-- HERO -->
 <section class="hero" id="top">
-  <img class="hero-bg" src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}" alt="" aria-hidden="true" />
+  <img class="hero-bg"
+       src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
+       alt=""
+       aria-hidden="true" />
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="wrap hero-content">
@@ -19,32 +22,47 @@ permalink: /
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="wrap">
     <div class="section-header">
       <h2>About</h2>
-      <p class="section-intro">I help organizations move beyond performative empathy into systems that actually support people.</p>
+      <p class="section-intro">
+        I help organizations move beyond performative empathy into systems that actually support people.
+      </p>
     </div>
 
     <div class="card">
-      <p>Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection of lived experience and systems change.</p>
-      <p>Her talks and partnerships translate complexity into clarity—so teams can build policies, programs, and communication that hold up in real life.</p>
+      <p>
+        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection
+        of lived experience and systems change.
+      </p>
+      <p>
+        Her talks and partnerships translate complexity into clarity—so teams can build policies, programs, and communication
+        that hold up in real life.
+      </p>
     </div>
   </div>
 </section>
 
-<section id="books" class="books">
+<!-- BOOKS -->
+<section id="books" class="light">
   <div class="wrap">
     <div class="section-header">
       <h2>Books & Publications</h2>
-      <p class="section-intro">Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.</p>
+      <p class="section-intro">
+        Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.
+      </p>
     </div>
 
     <div class="grid book-grid">
       <article class="card book-card">
         <p class="role-pill">Author</p>
         <h3>The Neurodiversity Workbook for Parents</h3>
-        <p class="muted book-desc">A practical and compassionate guide helping families navigate neurodiversity, advocacy, and everyday caregiving—without losing themselves in the process.</p>
+        <p class="muted">
+          A practical and compassionate guide helping families navigate neurodiversity, advocacy,
+          and everyday caregiving—without losing themselves in the process.
+        </p>
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/06KBZVK1" target="_blank" rel="noopener">View on Amazon →</a>
           <a class="btn" href="#contact">Invite Kacie to speak</a>
@@ -54,7 +72,10 @@ permalink: /
       <article class="card book-card">
         <p class="role-pill role-pill--alt">Co-author</p>
         <h3>For the Love of Autism</h3>
-        <p class="muted book-desc">A collaborative collection sharing lived experiences, advocacy journeys, and perspectives from families raising autistic children.</p>
+        <p class="muted">
+          A collaborative collection sharing lived experiences, advocacy journeys, and perspectives
+          from families raising autistic children.
+        </p>
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/0be2TFl6" target="_blank" rel="noopener">View on Amazon →</a>
           <a class="btn" href="#contact">Book a keynote</a>
@@ -64,65 +85,64 @@ permalink: /
   </div>
 </section>
 
-<section id="excerpts" class="excerpts">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>Excerpts</h2>
-      <p class="section-intro">Three selections from <em>The Waiting Rooms of My Life</em>.</p>
-    </div>
-
-    <div class="excerpts-grid">
-      <article class="excerpt-card">
-        <img class="excerpt-img" src="{{ '/assets/img/hospital-hallway-in-cool-tones.png' | relative_url }}" alt="Hospital hallway in cool tones">
-        <h3 class="excerpt-title">The Hospital Hallway</h3>
-        <p class="excerpt-sub">Why trauma refuses to stay in the past.</p>
-      </article>
-
-      <article class="excerpt-card">
-        <img class="excerpt-img" src="{{ '/assets/img/the-waiting-rooms-of-my-life.png' | relative_url }}" alt="The Waiting Rooms of My Life title on soft hospital background">
-        <h3 class="excerpt-title">The Waiting Rooms of My Life</h3>
-        <p class="excerpt-sub">A memoir-in-progress about what systems cost.</p>
-      </article>
-
-      <article class="excerpt-card">
-        <img class="excerpt-img" src="{{ '/assets/img/waiting-for-lifes-next-chapter.png' | relative_url }}" alt="Open bag on warm textured background">
-        <h3 class="excerpt-title">When No One Is Calling</h3>
-        <p class="excerpt-sub">What happens after survival gets quiet.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="writing" class="light">
+<!-- SELECTED WRITING (3 across w/ images + captions) -->
+<section id="writing">
   <div class="wrap">
     <div class="section-header">
       <h2>Selected Writing</h2>
-      <p class="section-intro">Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.</p>
+      <p class="section-intro">
+        Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.
+      </p>
     </div>
 
-    <div class="grid writing-grid">
-      <article class="card writing-card">
-        <h3>Caroline and DDX3X: More Than a Diagnosis</h3>
-        <p>On rare disease, identity, and the girl behind the genetic report.</p>
-        <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+    <div class="excerpt-grid">
+      <article class="card excerpt-tile">
+        <div class="excerpt-media">
+          <img src="{{ '/assets/img/hospital-hallway.png' | relative_url }}"
+               alt="Moody hospital hallway in cool tones with title text overlay." />
+        </div>
+        <div class="excerpt-body">
+          <h3>The Hospital Hallway Where Time Collapses</h3>
+          <p>Why trauma refuses to stay in the past.</p>
+        </div>
+        <div class="excerpt-actions">
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+        </div>
       </article>
 
-      <article class="card writing-card">
-        <h3>The End of an Era</h3>
-        <p>On transitions, grief, and the quiet ache of change that no one else sees.</p>
-        <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+      <article class="card excerpt-tile">
+        <div class="excerpt-media">
+          <img src="{{ '/assets/img/when-no-one-is-calling.png' | relative_url }}"
+               alt="Soft, muted scene with title text overlay." />
+        </div>
+        <div class="excerpt-body">
+          <h3>When No One Is Calling</h3>
+          <p>What happens after survival becomes quiet.</p>
+        </div>
+        <div class="excerpt-actions">
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+        </div>
       </article>
 
-      <article class="card writing-card">
-        <h3>Putting My Oxygen Mask On First</h3>
-        <p>Why caregivers cannot survive on depletion—and what self-preservation really costs.</p>
-        <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+      <article class="card excerpt-tile">
+        <div class="excerpt-media">
+          <img src="{{ '/assets/img/invisible-tax.png' | relative_url }}"
+               alt="Hands signing paperwork, representing invisible labor." />
+        </div>
+        <div class="excerpt-body">
+          <h3>The Invisible Tax of Invisible Labor</h3>
+          <p>The administrative cost nobody budgets for.</p>
+        </div>
+        <div class="excerpt-actions">
+          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Read on Medium →</a>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="services">
+<!-- SERVICES -->
+<section id="services" class="light">
   <div class="wrap">
     <div class="section-header">
       <h2>Services</h2>
@@ -146,11 +166,12 @@ permalink: /
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
     <div class="section-header">
       <h2>Contact</h2>
-      <p class="section-intro">Speaking inquiries, collaborations, and media requests.</p>
+      <p class="section-intro">Let’s talk about your audience, your goals, and what “support” needs to look like in practice.</p>
     </div>
 
     <div class="card">
