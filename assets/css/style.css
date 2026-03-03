@@ -335,3 +335,8 @@ main{
   }
 
 }
+/* SAFETY: ensure text is visible site-wide */
+body, main, section { color:#1e1b18; }
+p, h1, h2, h3 { opacity:1; visibility:visible; }
+.hero-content { color:#fff; }
+.hero-overlay { pointer-events:none; }
