@@ -339,4 +339,77 @@ main{
 body, main, section { color:#1e1b18; }
 p, h1, h2, h3 { opacity:1; visibility:visible; }
 .hero-content { color:#fff; }
-.hero-overlay { pointer-events:none; }
+.hero-overlay { pointer-events:none; 
+
+/* =========================
+   EXCERPTS GRID (3 across)
+========================= */
+.excerpts{ background:#ffffff; }
+
+.excerpts-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:18px;
+}
+
+.excerpt-card{
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,.03);
+}
+
+.excerpt-link{
+  display:block;
+  padding:14px;
+}
+
+.excerpt-img{
+  width:100%;
+  height:auto;
+  border-radius:10px;
+  display:block;
+  aspect-ratio: 4 / 3;        /* keeps thumbnails consistent */
+  object-fit: cover;
+  border:1px solid rgba(0,0,0,.06);
+  margin-bottom:12px;
+}
+
+.excerpt-title{
+  margin:0 0 6px 0;
+  font-size:16px;
+}
+
+.excerpt-sub{
+  margin:0;
+  font-size:14px;
+  color:#5e5752;
+}
+
+.excerpt-card:hover{
+  transform: translateY(-2px);
+  transition: .15s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .excerpts-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px){
+  .excerpts-grid{ grid-template-columns: 1fr; }
+}
+               /* =========================
+   SAFETY: COPY VISIBILITY
+========================= */
+body{ color:#1e1b18; background:#fff; }
+main, section, .wrap, .card{ color: inherit; }
+
+h1,h2,h3,p,li,a{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Only the hero should be white text */
+.hero, .hero *{ color:#fff; }
+#about, #books, #writing, #services, #contact{ color:#1e1b18; }
