@@ -6,20 +6,16 @@ title: Home
 <section class="hero" id="top">
   <div class="wrap">
     <h1>Where Lived Experience Drives Systems Change.</h1>
-    <p>
-      Keynotes and strategy that transform empathy into action.
-    </p>
+    <p>Keynotes and strategy that transform empathy into action.</p>
     <a class="btn" href="#book">Book a Keynote</a>
   </div>
 </section>
-
 
 <section id="about">
   <div class="wrap">
     <h2>About Kacie</h2>
 
     <div class="grid">
-
       <div class="card">
         <img
           src="{{ '/assets/img/kacie-speaking.png' | relative_url }}"
@@ -39,14 +35,16 @@ title: Home
         </p>
 
         <p>
-          Her work blends strategy with story — helping organizations move
-          beyond performative inclusion into meaningful action.
+          Kacie speaks and writes about human-centered communication, invisible labor,
+          advocacy, neurodiversity, and the structural realities families face behind
+          closed doors — helping organizations move beyond performative inclusion into
+          meaningful action.
         </p>
       </div>
 
       <div class="card">
-        <h3>What Sets Her Apart</h3>
-        <ul style="line-height:1.8;">
+        <h3>What sets her apart</h3>
+        <ul style="margin-top:10px; line-height:1.8;">
           <li>Nearly 20 years in communications & digital strategy</li>
           <li>Published author & co-author</li>
           <li>National disability advocate</li>
@@ -55,14 +53,12 @@ title: Home
         </ul>
 
         <p style="margin-top:18px;">
-          <a class="btn" href="#book">Inquire About Speaking</a>
+          <a class="btn" href="#book">Inquire about speaking</a>
         </p>
       </div>
-
     </div>
   </div>
 </section>
-
 
 <section id="services">
   <div class="wrap">
@@ -71,38 +67,27 @@ title: Home
     <div class="grid">
       <div class="card">
         <h3>Speaking</h3>
-        <p>
-          Keynotes and workshops on human-centered communication,
-          neurodiversity, invisible labor, and inclusive leadership.
-        </p>
+        <p>Keynotes and workshops on human-centered communication, neurodiversity, and inclusive leadership.</p>
       </div>
 
       <div class="card">
         <h3>Inclusion Consulting</h3>
-        <p>
-          Practical frameworks for accessibility, belonging,
-          and communication that works.
-        </p>
+        <p>Practical frameworks for accessibility, belonging, and communication that works.</p>
       </div>
 
       <div class="card">
         <h3>Thought Leadership</h3>
-        <p>
-          Story-driven strategy that builds clarity,
-          credibility, and community.
-        </p>
+        <p>Story-driven content and strategy that builds trust, clarity, and community.</p>
       </div>
     </div>
   </div>
 </section>
-
 
 <section id="books">
   <div class="wrap">
     <h2>Books</h2>
 
     <div class="grid">
-
       <div class="card">
         <h3>Neurodiversity Workbook: For Parents</h3>
         <p>
@@ -117,34 +102,30 @@ title: Home
       <div class="card">
         <h3>For the Love of Autism</h3>
         <p>
-          Co-authored reflections on parenting, resilience,
-          and the evolving understanding of neurodiversity.
+          Co-authored reflections on parenting, resilience, and the evolving
+          understanding of neurodiversity and community.
         </p>
         <a class="btn" href="https://a.co/d/0debXcfY" target="_blank" rel="noopener">
           View on Amazon →
         </a>
       </div>
-
     </div>
   </div>
 </section>
 
-
 <section id="writing">
   <div class="wrap">
-    <h2>Writing</h2>
+    <h2>Writing & Thought Leadership</h2>
 
     <div class="grid">
       <div class="card">
         <h3>Personal Essays & Memoir</h3>
-        <p>
-          Reflections on caregiving, systems, invisible labor,
-          and the human cost of waiting rooms.
-        </p>
+        <p>Reflections on caregiving, systems, invisible labor, and the human cost of waiting rooms.</p>
       </div>
 
       <div class="card">
         <h3>Read on Medium</h3>
+        <p>Explore full essays, commentary, and long-form writing.</p>
         <a class="btn" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
           Visit Medium →
         </a>
@@ -153,6 +134,26 @@ title: Home
   </div>
 </section>
 
+<section id="excerpts">
+  <div class="wrap">
+    <h2>Featured excerpts</h2>
+
+    <div class="grid">
+      {% assign featured = site.excerpts | slice: 0, 3 %}
+      {% for item in featured %}
+        <div class="card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.content | strip_html | truncate: 200 }}</p>
+          <p><a class="btn" href="{{ item.url | relative_url }}">Read more</a></p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <p style="margin-top:18px;">
+      <a class="btn" href="{{ '/excerpts/' | relative_url }}">View all excerpts</a>
+    </p>
+  </div>
+</section>
 
 <section id="book">
   <div class="wrap">
@@ -160,24 +161,29 @@ title: Home
 
     <div class="grid">
       <div class="card">
-        <h3>Available For</h3>
+        <h3>Keynotes • Workshops • Panels</h3>
         <p>
-          Conferences, schools, healthcare organizations,
-          nonprofits, and corporate teams.
+          Available for conferences, nonprofits, schools, healthcare organizations,
+          and corporate teams.
+        </p>
+        <p>
+          Topics include human-centered communication, neurodiversity, advocacy,
+          invisible labor, and inclusion that moves beyond intention to impact.
         </p>
       </div>
 
       <div class="card">
         <h3>Request Availability</h3>
-        <a class="btn"
-           href="mailto:YOUR@email.com?subject=Keynote%20Inquiry%20for%20Kacie%20Wielgus%20(Buzzard)">
+        <p>
+          Share your date, format (virtual or in-person), audience size, and goals.
+        </p>
+        <a class="btn" href="mailto:YOUR@email.com?subject=Keynote%20Inquiry%20for%20Kacie%20Wielgus%20(Buzzard)">
           Email to Book →
         </a>
       </div>
     </div>
   </div>
 </section>
-
 
 <section id="contact">
   <div class="wrap">
