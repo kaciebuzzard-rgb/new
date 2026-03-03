@@ -39,3 +39,6 @@ git push
 git add _config.yml
 git commit -m "Ensure assets are included in build"
 git push
+git mv layouts/default.html _layouts/default.html
+git commit -m "Move layout to correct _layouts folder"
+git push
