@@ -13,3 +13,6 @@ git ls-files | grep "^_site/" | head
 ls -la | head -n 25
 grep -n "Where lived experience drives systems change" _site/index.html | head
 sed -n '1,40p' _layouts/default.html
+git add _config.yml
+git commit -m "Fix config url/baseurl"
+git push
