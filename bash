@@ -6,4 +6,6 @@ git ls-files | grep "^_site/" || echo "_site not tracked ✅"
 bundle exec jekyll build
 ls -la _site | grep index
 grep -n "Where lived experience drives systems change" _site/index.html || echo "COPY NOT IN OUTPUT ❌"
-
+git add index.md
+git commit -m "Fix homepage permalink"
+git push
