@@ -158,7 +158,12 @@ section h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
-
+#book {
+  background: #ffffff;
+}
+#book h2 {
+  font-size: 36px;
+}
 /* =========================
    FOOTER
 ========================= */
