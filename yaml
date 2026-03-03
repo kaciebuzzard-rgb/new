@@ -5,3 +5,8 @@ baseurl: ""
 markdown: kramdown
 theme: null
 permalink: pretty
+
+collections:
+  excerpts:
+    output: true
+    permalink: /excerpts/:name/
