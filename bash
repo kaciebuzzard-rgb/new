@@ -16,3 +16,10 @@ git add assets/img/neurodiversity-workbook-for-parents.webp assets/img/for-the-l
 git add index.md _layouts/post.html
 git commit -m "Add homepage, book covers, and post layout"
 git push
+git status
+# edit: _config.yml (replace), create _layouts/default.html, _layouts/post.html
+# ensure: index.md exists at repo root
+
+git add _config.yml index.md _layouts/default.html _layouts/post.html
+git commit -m "Fix Jekyll config + add layouts"
+git push
