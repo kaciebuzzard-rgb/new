@@ -53,40 +53,61 @@ title: Home
     <div class="section-header">
       <h2>Books & Publications</h2>
       <p class="section-intro">
-        Writing at the intersection of caregiving, disability, identity, and the systems families are forced to navigate.
+        Writing at the intersection of caregiving, disability, identity, and the systems families must navigate.
       </p>
     </div>
 
     <div class="grid book-grid">
+
+      <!-- Workbook -->
       <article class="card book-card">
+        <img
+          src="{{ '/assets/img/neurodiversity-workbook.png' | relative_url }}"
+          alt="Neurodiversity Workbook for Parents book cover"
+          loading="lazy"
+        />
+
         <p class="role-pill">Author</p>
-        <h3>The Neurodiversity Workbook for Parents</h3>
+
+        <h3>Neurodiversity Workbook for Parents</h3>
+
         <p class="muted">
-          A practical and compassionate guide helping families navigate neurodiversity, advocacy,
-          and everyday caregiving—without losing themselves in the process.
+          A practical and compassionate guide helping families navigate neurodiversity,
+          advocacy, and everyday caregiving without losing themselves in the process.
         </p>
+
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/06KBZVK1" target="_blank" rel="noopener">View on Amazon →</a>
           <a class="btn" href="#contact">Invite Kacie to speak</a>
         </div>
       </article>
 
+      <!-- Love of Autism -->
       <article class="card book-card">
+        <img
+          src="{{ '/assets/img/love-of-autism.png' | relative_url }}"
+          alt="For the Love of Autism book cover"
+          loading="lazy"
+        />
+
         <p class="role-pill role-pill--alt">Co-author</p>
+
         <h3>For the Love of Autism</h3>
+
         <p class="muted">
-          A collaborative collection sharing lived experiences, advocacy journeys, and perspectives
-          from families raising autistic children.
+          A collaborative collection sharing lived experiences, advocacy journeys,
+          and perspectives from families raising autistic children.
         </p>
+
         <div class="book-actions">
           <a class="btn btn-ghost" href="https://a.co/d/0be2TFl6" target="_blank" rel="noopener">View on Amazon →</a>
           <a class="btn" href="#contact">Book a keynote</a>
         </div>
       </article>
+
     </div>
   </div>
 </section>
-
 <!-- SELECTED WRITING -->
 <section id="writing">
   <div class="wrap">
