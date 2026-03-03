@@ -5,49 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main stylesheet (cache-busted) -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
-
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="wrap nav">
-      <div class="brand">
-        <a href="{{ '/' | relative_url }}">
-          {{ site.title }}
-          <small>{{ site.description }}</small>
-        </a>
-      </div>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
-        <a href="{{ '/' | relative_url }}#excerpts">Excerpts</a>
-        <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Writing</a>
-        <a class="pill" href="{{ '/' | relative_url }}#book">Book a Keynote</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- IMPORTANT: main is full-width; wrap inside sections -->
-  <main id="main">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    </div>
-  </footer>
-
+  {{ content }}
 </body>
 </html>
