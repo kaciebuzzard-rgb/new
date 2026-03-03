@@ -1,1 +1,21 @@
+---
+layout: default
+title: "Excerpts"
+permalink: /excerpts/
+---
 
+<section class="wrap">
+  <h1>Excerpts</h1>
+
+  <div class="grid">
+    {% for item in site.excerpts %}
+      <div class="card">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.content | strip_html | truncate: 240 }}</p>
+        <p>
+          <a class="btn" href="{{ item.url | relative_url }}">Read more →</a>
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
