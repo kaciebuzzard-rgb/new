@@ -53,3 +53,6 @@ git status
 git ls-files | grep -i "holding"
 git ls-files | grep -i "packing"
 git ls-files | grep -i "when"
+git add assets/img
+git commit -m "Add site images"
+git push
