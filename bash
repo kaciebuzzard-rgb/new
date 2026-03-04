@@ -276,4 +276,6 @@ git commit -m "Fix layout"
 git push
 mkdir -p assets/css
 [ -f assets/css/style.css ] && git mv assets/css/style.css assets/css/styles.css || true
-
+git add assets/css/styles.css
+git commit -m "Replace CSS with clean full stylesheet"
+git push
