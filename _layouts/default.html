@@ -1,83 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | {{ site.title }}</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- ✅ Your repo file is assets/css/style.css -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
-
-  <header class="site-header">
-    <div class="wrap site-nav">
-      <a class="nav-logo" href="{{ '/' | relative_url }}#top">Kacie Wielgus (Buzzard)</a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
-        <a href="{{ '/' | relative_url }}#writing">Essays</a>
-        <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener noreferrer">Medium</a>
-        <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
-    </div>
-  </footer>
-
-  <!-- OPTIONAL: Medium feed injection (only works if #medium-posts exists on the page) -->
-  <script>
-    const mediumFeed =
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kwbuzzard";
-
-    fetch(mediumFeed)
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById("medium-posts");
-        if (!container || !data.items) return;
-
-        const posts = data.items.slice(0, 3);
-
-        posts.forEach(post => {
-          const card = document.createElement("article");
-          card.className = "card";
-
-          const title = post.title;
-          const link = post.link;
-
-          const excerpt = post.description
-            .replace(/<[^>]+>/g, "")
-            .replace(/\s+/g, " ")
-            .substring(0, 160) + "...";
-
-          card.innerHTML = `
-            <h3>${title}</h3>
-            <p class="muted">${excerpt}</p>
-            <a class="btn btn-ghost" href="${link}" target="_blank" rel="noopener">
-              Read on Medium →
-            </a>
-          `;
-
-          container.appendChild(card);
-        });
-      });
-  </script>
-
+    <!-- Main content goes here -->
 </body>
 </html>
