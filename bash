@@ -82,3 +82,6 @@ git push
 git add index.md
 git commit -m "Fix duplicate front matter and duplicate hero"
 git push
+git add netlify.toml
+git commit -m "Add Netlify build config"
+git push
