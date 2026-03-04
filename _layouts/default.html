@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <title>
+    {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
@@ -19,17 +22,15 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="wrap nav-row">
-      <a class="nav-logo" href="{{ '/' | relative_url }}#top">
-        {{ site.title | default: "Kacie Wielgus (Buzzard)" }}
-      </a>
+    <div class="wrap site-nav">
+      <a class="nav-logo" href="{{ '/' | relative_url }}#top">Kacie Wielgus (Buzzard)</a>
 
       <nav class="nav-links" aria-label="Primary">
         <a href="{{ '/' | relative_url }}#about">About</a>
         <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
         <a href="{{ '/' | relative_url }}#writing">Writing</a>
         <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Medium</a>
         <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
       </nav>
     </div>
@@ -41,9 +42,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <div class="footer-bottom">
-        © {{ "now" | date: "%Y" }} {{ site.title | default: "Kacie Wielgus (Buzzard)" }}. All rights reserved.
-      </div>
+      <p class="muted">© {{ site.time | date: "%Y" }} Kacie Wielgus (Buzzard)</p>
     </div>
   </footer>
 
