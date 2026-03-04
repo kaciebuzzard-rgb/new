@@ -1,12 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+  </title>
+
+  {% if site.description %}
+  <meta name="description" content="{{ site.description | escape }}">
+  {% endif %}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet (make sure this file exists at /assets/css/style.css) -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Optional: social preview basics -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 180 | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+  <meta property="og:type" content="website">
 </head>
+
 <body>
-    <!-- Main content goes here -->
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="nav-logo" href="{{ '/' | relative_url }}#top">
+        {{ site.title | default: "Kacie Wielgus (Buzzard)" }}
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#services">Services</a>
+        <a href="{{ '/' | relative_url }}#books">Books</a>
+        <a href="{{ '/' | relative_url }}#writing">Writing</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main" class="site-main">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+
+      <div class="footer-col">
+        <h3 class="footer-title">{{ site.title | default: "Kacie Wielgus (Buzzard)" }}</h3>
+        <p class="footer-text">
+          Speaker • Inclusion Consultant • Writer
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+          <li><a href="{{ '/' | relative_url }}#services">Services</a></li>
+          <li><a href="{{ '/' | relative_url }}#books">Books</a></li>
+          <li><a href="{{ '/' | relative_url }}#writing">Writing</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Find me</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Medium</a></li>
+          <li><a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>
+        © {{ "now" | date: "%Y" }} {{ site.title | default: "Kacie Wielgus (Buzzard)" }}. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
