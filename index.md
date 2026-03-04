@@ -50,67 +50,55 @@ title: Home
   </div>
 </section>
 
-<!-- BOOKS -->
-<section id="books" class="light">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>Books & Publications</h2>
-      <p class="section-intro">
-        Writing at the intersection of caregiving, disability, identity, and the systems families must navigate.
-      </p>
+<div class="grid book-grid">
+
+  <!-- Workbook -->
+  <article class="card book-card">
+    <img
+      src="{{ '/assets/img/neurodiversity-workbook.png' | relative_url }}"
+      alt="Neurodiversity Workbook for Parents book cover"
+      loading="lazy"
+    />
+
+    <p class="role-pill">Author</p>
+
+    <h3>Neurodiversity Workbook for Parents</h3>
+
+    <p class="muted">
+      A practical and compassionate guide helping families navigate neurodiversity,
+      advocacy, and everyday caregiving without losing themselves in the process.
+    </p>
+
+    <div class="book-actions">
+      <a class="btn btn-ghost" href="https://a.co/d/06KBZVK1" target="_blank" rel="noopener">View on Amazon →</a>
+      <a class="btn" href="#contact">Invite Kacie to speak</a>
     </div>
+  </article>
 
-    <div class="grid book-grid">
+  <!-- Love of Autism -->
+  <article class="card book-card">
+    <img
+      src="{{ '/assets/img/love-of-autism.png' | relative_url }}"
+      alt="For the Love of Autism book cover"
+      loading="lazy"
+    />
 
-      <!-- Workbook -->
-      <article class="card book-card">
-        <img
-          src="{{ '/assets/img/neurodiversity-workbook.png' | relative_url }}"
-          alt="Neurodiversity Workbook for Parents book cover"
-          loading="lazy"
-        />
+    <p class="role-pill role-pill--alt">Co-author</p>
 
-        <p class="role-pill">Author</p>
+    <h3>For the Love of Autism</h3>
 
-        <h3>Neurodiversity Workbook for Parents</h3>
+    <p class="muted">
+      A collaborative collection sharing lived experiences, advocacy journeys,
+      and perspectives from families raising autistic children.
+    </p>
 
-        <p class="muted">
-          A practical and compassionate guide helping families navigate neurodiversity,
-          advocacy, and everyday caregiving without losing themselves in the process.
-        </p>
-
-        <div class="book-actions">
-          <a class="btn btn-ghost" href="https://a.co/d/06KBZVK1" target="_blank" rel="noopener">View on Amazon →</a>
-          <a class="btn" href="#contact">Invite Kacie to speak</a>
-        </div>
-      </article>
-
-      <!-- Love of Autism -->
-      <article class="card book-card">
-        <img
-          src="{{ '/assets/img/love-of-autism.png' | relative_url }}"
-          alt="For the Love of Autism book cover"
-          loading="lazy"
-        />
-
-        <p class="role-pill role-pill--alt">Co-author</p>
-
-        <h3>For the Love of Autism</h3>
-
-        <p class="muted">
-          A collaborative collection sharing lived experiences, advocacy journeys,
-          and perspectives from families raising autistic children.
-        </p>
-
-        <div class="book-actions">
-          <a class="btn btn-ghost" href="https://a.co/d/0be2TFl6" target="_blank" rel="noopener">View on Amazon →</a>
-          <a class="btn" href="#contact">Book a keynote</a>
-        </div>
-      </article>
-
+    <div class="book-actions">
+      <a class="btn btn-ghost" href="https://a.co/d/0be2TFl6" target="_blank" rel="noopener">View on Amazon →</a>
+      <a class="btn" href="#contact">Book a keynote</a>
     </div>
-  </div>
-</section>
+  </article>
+
+</div>
 <!-- SELECTED WRITING -->
 <section id="writing">
   <div class="wrap">
@@ -126,50 +114,59 @@ title: Home
 
       <!-- Hospital Essay -->
       <article class="writing-card">
-        <div class="writing-image">
-          <img src="{{ '/assets/img/holding_on_in_silence.png' | relative_url }}" alt="Woman holding a patient's hand in a hospital room">
-        </div>
+        <a class="writing-link" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+          <div class="writing-image">
+            <img
+              src="{{ '/assets/img/4.png' | relative_url }}"
+              alt="Hospital bedside moment"
+              loading="lazy"
+            />
+          </div>
 
-        <div class="writing-content">
-          <h3>The Hospital Hallway Where Time Collapses</h3>
-          <p>Why trauma refuses to stay in the past.</p>
-
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
-            Read on Medium →
-          </a>
-        </div>
+          <div class="writing-content">
+            <h3>The Hospital Hallway Where Time Collapses</h3>
+            <p>Why trauma refuses to stay in the past.</p>
+            <span class="writing-cta">Read on Medium →</span>
+          </div>
+        </a>
       </article>
 
       <!-- Invisible Tax -->
       <article class="writing-card">
-        <div class="writing-image">
-          <img src="{{ '/assets/img/packing_for_tragedy.jpg' | relative_url }}" alt="Open bag showing items packed for hospital visits">
-        </div>
+        <a class="writing-link" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+          <div class="writing-image">
+            <img
+              src="{{ '/assets/img/5.jpg' | relative_url }}"
+              alt="Open bag showing items packed for hospital visits"
+              loading="lazy"
+            />
+          </div>
 
-        <div class="writing-content">
-          <h3>The Invisible Tax of Caregiving</h3>
-          <p>The administrative cost nobody budgets for.</p>
-
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
-            Read on Medium →
-          </a>
-        </div>
+          <div class="writing-content">
+            <h3>The Invisible Tax of Caregiving</h3>
+            <p>The administrative cost nobody budgets for.</p>
+            <span class="writing-cta">Read on Medium →</span>
+          </div>
+        </a>
       </article>
 
       <!-- Quiet After Survival -->
       <article class="writing-card">
-        <div class="writing-image">
-          <img src="{{ '/assets/img/when_no_one_is_calling.png' | relative_url }}" alt="Quiet window seat with blanket and books">
-        </div>
+        <a class="writing-link" href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+          <div class="writing-image">
+            <img
+              src="{{ '/assets/img/6.png' | relative_url }}"
+              alt="Quiet window seat with blanket and books"
+              loading="lazy"
+            />
+          </div>
 
-        <div class="writing-content">
-          <h3>When No One Is Calling</h3>
-          <p>What happens after survival becomes quiet.</p>
-
-          <a class="btn btn-ghost" href="https://medium.com/@kwbuzzard" target="_blank">
-            Read on Medium →
-          </a>
-        </div>
+          <div class="writing-content">
+            <h3>When No One Is Calling</h3>
+            <p>What happens after survival becomes quiet.</p>
+            <span class="writing-cta">Read on Medium →</span>
+          </div>
+        </a>
       </article>
 
     </div>
