@@ -133,3 +133,7 @@ git mv 6.PNG 6.png 2>/dev/null
 git add _layouts/default.html index.md
 git commit -m "Fix layout head and load CSS; update homepage"
 git push
+git add _layouts/default.html
+git commit -m "Fix layout"
+git push
+
