@@ -85,3 +85,7 @@ git push
 git add netlify.toml
 git commit -m "Add Netlify build config"
 git push
+git mv "assets/img/for_the_love_of_autism.png." "assets/img/love-of-autism.png"
+git add -A
+git commit -m "Fix Love of Autism cover filename"
+git push
