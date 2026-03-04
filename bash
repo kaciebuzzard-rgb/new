@@ -279,3 +279,6 @@ mkdir -p assets/css
 git add assets/css/styles.css
 git commit -m "Replace CSS with clean full stylesheet"
 git push
+git add _layouts/default.html index.md
+git commit -m "Fix layout head/CSS link and homepage front matter"
+git push
