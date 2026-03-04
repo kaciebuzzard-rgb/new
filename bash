@@ -274,5 +274,6 @@ git push
 git add _layouts/default.html
 git commit -m "Fix layout"
 git push
-
+mkdir -p assets/css
+[ -f assets/css/style.css ] && git mv assets/css/style.css assets/css/styles.css || true
 
