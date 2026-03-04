@@ -20,6 +20,7 @@
 
   --max:1100px;
 }
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
 /* =========================
    RESET + BASE
