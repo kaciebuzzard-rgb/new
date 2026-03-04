@@ -2,36 +2,34 @@
 layout: default
 title: Home
 ---
-
 <!-- HERO -->
 <section class="hero" id="top">
-
-  <img
-    class="hero-bg"
-    src="{{ '/assets/img/6.png' | relative_url }}"
-    alt="Kacie speaking on stage"
-    loading="eager"
-  >
 
   <div class="hero-overlay"></div>
 
   <div class="wrap hero-content">
 
-    <h1>Where lived experience drives systems change.</h1>
+    <h1>
+      Where lived experience drives systems change.
+    </h1>
 
     <p>
       Keynotes and strategy that turn empathy into action—without the performative stuff.
     </p>
 
     <div class="hero-actions">
-      <a class="btn" href="#contact">Book a Keynote</a>
-      <a class="btn btn-ghost" href="#services">Explore Services</a>
+      <a class="btn" href="#contact">
+        Book a Keynote
+      </a>
+
+      <a class="btn btn-ghost" href="#services">
+        Explore Services
+      </a>
     </div>
 
   </div>
 
 </section>
-
 <!-- ABOUT -->
 <section id="about" class="light">
   <div class="wrap">
