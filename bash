@@ -64,3 +64,18 @@ grep -R "Blog" -n .
 git add .
 git commit -m "Replace styles.css with clean full version"
 git push
+# go into images folder
+cd assets/img
+
+# examples of renaming the worst offenders (adjust names as you like)
+git mv "Waiting for life's next chapter.png" waiting-for-lifes-next-chapter.png
+git mv "The comfort of waiting hands.png" the-comfort-of-waiting-hands.png
+git mv "Premium Photo _ Heal.png" premium-photo-heal.png
+git mv "ChatGPT Image Feb 28, 2026, 03_49_10 PM.png" chatgpt-image-2026-02-28.png
+
+# this one has a trailing dot in the filename (will break!)
+git mv "for_the_love_of_autism.png." for_the_love_of_autism.png
+
+cd ../..
+git commit -m "Rename images to web-safe filenames"
+git push
