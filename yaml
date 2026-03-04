@@ -1,11 +1,8 @@
----
-layout: default
-title: "Home"
-permalink: /
----
+title: "Kacie Wielgus (Buzzard)"
+description: "Speaker • Inclusion Consultant • Writer"
+markdown: kramdown
+theme: null
+permalink: pretty
+
 include:
   - assets
-  title: Kacie Wielgus (Buzzard)
-markdown: kramdown
-permalink: pretty
-remote_theme: pages-themes/minimal@v0.2.0
