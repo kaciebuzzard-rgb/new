@@ -383,3 +383,69 @@ color:#666;
   .hero-content p{ font-size:16px; }
   .section-intro{ font-size:16px; }
 }
+/* HERO: move subject (your head) DOWN in the crop */
+.hero-bg{
+  object-position: center 35%; /* increase % to move down more (45%, 55%) */
+}
+
+/* WRITING: polished cards */
+.writing-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:22px;
+  margin-top:34px;
+}
+
+.writing-card{
+  padding:0;
+  overflow:hidden;
+}
+
+.writing-link{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  text-decoration:none;
+}
+
+.writing-image{
+  aspect-ratio: 16 / 10;
+  overflow:hidden;
+  background: rgba(255,255,255,.65);
+}
+
+.writing-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+.writing-content{
+  padding:20px 22px 22px;
+}
+
+.writing-content h3{
+  margin:0 0 8px;
+  font-size:18px;
+  line-height:1.25;
+}
+
+.writing-content p{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+
+.writing-cta{
+  font-weight:800;
+  font-size:14px;
+}
+
+.writing-card:hover .writing-image img{
+  transform:scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .writing-grid{ grid-template-columns:1fr; }
+}
