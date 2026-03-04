@@ -5,3 +5,10 @@ _site/
 .jekyll-metadata
 vendor/
 .DS_Store
+cat > .gitignore <<'EOF'
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+EOF
