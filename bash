@@ -96,3 +96,17 @@ ls -la assets/img
 git add assets/css/styles.css
 git commit -m "Clean CSS and fix hero"
 git push
+# go to your repo root first
+
+git mv "assets/img/The comfort of waiting hands.png" "assets/img/the-comfort-of-waiting-hands.png"
+git mv "assets/img/for_the_love_of_autism.png." "assets/img/love-of-autism.png"
+git mv "assets/img/Holding_on_in_silence.png" "assets/img/holding-on-in-silence.png"
+
+# These two have no extensions. Fix them by renaming to something with an extension.
+# (Choose the correct extension based on what they actually are. Most likely .png or .jpg)
+git mv "assets/img/hero" "assets/img/hero.png"
+git mv "assets/img/Neurodiversity Workbook cover" "assets/img/neurodiversity-workbook-cover.png"
+
+git add -A
+git commit -m "Rename images to web-safe filenames"
+git push
