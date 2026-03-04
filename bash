@@ -89,3 +89,6 @@ git mv "assets/img/for_the_love_of_autism.png." "assets/img/love-of-autism.png"
 git add -A
 git commit -m "Fix Love of Autism cover filename"
 git push
+git add assets/css/styles.css
+git commit -m "Fix hero image layout"
+git push
