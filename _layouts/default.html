@@ -1,178 +1,51 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-<title>
-{% if page.title %}
-{{ page.title }} | {{ site.title }}
-{% else %}
-{{ site.title }}
-{% endif %}
-</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<meta name="description" content="{{ site.description }}">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Main CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 
 <body>
 
-<!-- =========================
-HEADER / NAV
-========================= -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="nav-logo" href="{{ '/' | relative_url }}#top">
+        {{ site.title | default: "Kacie Wielgus (Buzzard)" }}
+      </a>
 
-<div class="wrap site-nav">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#services">Services</a>
+        <a href="{{ '/' | relative_url }}#books">Books</a>
+        <a href="{{ '/' | relative_url }}#writing">Writing</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<a class="nav-logo" href="{{ '/' | relative_url }}">
-Kacie Wielgus (Buzzard)
-</a>
+  <main id="main">
+    {{ content }}
+  </main>
 
-<nav class="nav-links" aria-label="Primary">
-
-<a href="{{ '/' | relative_url }}#about">
-About
-</a>
-
-<a href="{{ '/' | relative_url }}#speaking">
-Speaking
-</a>
-
-<a href="{{ '/' | relative_url }}#consulting">
-Consulting
-</a>
-
-<a href="{{ '/' | relative_url }}#writing">
-Writing
-</a>
-
-<a href="{{ '/blog/' | relative_url }}">
-Blog
-</a>
-
-<a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
-Medium
-</a>
-
-<a href="{{ '/' | relative_url }}#contact">
-Contact
-</a>
-
-</nav>
-
-</div>
-
-</header>
-
-
-<!-- =========================
-MAIN CONTENT
-========================= -->
-
-<main>
-
-{{ content }}
-
-</main>
-
-
-<!-- =========================
-OPTIONAL MEDIUM SECTION
-(if you create a #medium-posts container)
-========================= -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-
-const container = document.getElementById("medium-posts");
-
-if(!container) return;
-
-container.innerHTML = `
-<div class="grid writing-grid">
-
-<article class="card writing-card">
-<h3>Essays on Caregiving</h3>
-<p>
-Writing about invisible labor, disability, resilience, and systems that families navigate every day.
-</p>
-
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard"
-target="_blank"
-rel="noopener">
-
-Visit Medium →
-
-</a>
-</article>
-
-<article class="card writing-card">
-<h3>Latest Medium Posts</h3>
-<p>
-Personal essays exploring caregiving, rare disease parenting, and identity.
-</p>
-
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard/latest"
-target="_blank"
-rel="noopener">
-
-Read the Latest →
-
-</a>
-</article>
-
-</div>
-`;
-});
-</script>
-
-
-<!-- =========================
-FOOTER
-========================= -->
-
-<footer class="site-footer">
-
-<div class="wrap footer-inner">
-
-<p>
-© {{ site.time | date: "%Y" }} Kacie Wielgus (Buzzard)
-</p>
-
-<div class="footer-links">
-
-<a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">
-LinkedIn
-</a>
-
-<a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
-Medium
-</a>
-
-<a href="mailto:kacie.buzzard@gmail.com">
-Email
-</a>
-
-</div>
-
-</div>
-
-</footer>
-
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-bottom">
+        © {{ "now" | date: "%Y" }} {{ site.title | default: "Kacie Wielgus (Buzzard)" }}. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
