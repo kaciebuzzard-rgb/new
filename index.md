@@ -67,7 +67,6 @@ title: Home
 
   </div>
 </section>
-
 <!-- BOOKS -->
 <section id="books" class="light">
   <div class="wrap">
