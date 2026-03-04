@@ -55,10 +55,7 @@ title: Home
   <!-- Workbook -->
   <article class="card book-card">
     <img
-      src="{{ '/assets/img/neurodiversity-workbook.png' | relative_url }}"
-      alt="Neurodiversity Workbook for Parents book cover"
-      loading="lazy"
-    />
+  <img src="{{ '/assets/img/2.png' | relative_url }}" alt="For the Love of Autism book cover" loading="lazy" />
 
     <p class="role-pill">Author</p>
 
