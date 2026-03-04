@@ -56,3 +56,5 @@ git ls-files | grep -i "when"
 git add assets/img
 git commit -m "Add site images"
 git push
+ls -la assets/css
+git ls-files | grep -i "assets/css/styles.css"
