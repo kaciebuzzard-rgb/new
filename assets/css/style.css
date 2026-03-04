@@ -1,17 +1,571 @@
-.writing-media {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+/* =========================================================
+   KACIES.LIFE — FULL SITE CSS (copy/paste as ONE file)
+   Save as: assets/css/style.css  (or rename to styles.css to match your layout)
+========================================================= */
+
+/* =========================
+   DESIGN TOKENS
+========================= */
+:root{
+  --bg:#ffffff;
+  --light:#f7f1e8;
+  --surface:#ffffff;
+
+  --text:#1e1b18;
+  --muted:#6b5e55;
+  --line:rgba(30,27,24,.12);
+
+  --primary:#c55a3a;
+  --primary-2:#a94a2f;
+
+  --shadow:0 16px 40px rgba(0,0,0,.10);
+  --shadow-soft:0 10px 26px rgba(0,0,0,.08);
+
+  --radius:18px;
+  --radius-sm:12px;
+
+  --max:1100px;
+
+  /* Hero controls */
+  --hero-min:78vh;
+  --hero-overlay:rgba(25,20,18,.52); /* dark overlay for text readability */
 }
 
-/**
- * Remove invalid HERO HTML block styles
- */
+/* =========================
+   RESET + BASE
+========================= */
+*{ margin:0; padding:0; box-sizing:border-box; }
 
-/* The following lines (163-183) have been removed */
+html{ scroll-behavior:smooth; }
 
-/**
- * Existing writing styles targeting .writing-image
- */
-.writing-image {
-  /* Prior styles for .writing-image removed */
+body{
+  font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  text-rendering:optimizeLegibility;
+}
+
+img{ max-width:100%; display:block; }
+
+a{ color:inherit; text-decoration:none; }
+a:hover{ color:var(--primary); }
+
+::selection{ background:rgba(197,90,58,.22); }
+
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:16px;
+  top:16px;
+  width:auto;
+  height:auto;
+  padding:10px 12px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+  box-shadow:var(--shadow-soft);
+  z-index:9999;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.wrap{
+  width:min(var(--max), 92%);
+  margin:0 auto;
+}
+
+section{ padding:84px 0; }
+
+.section-header{ margin-bottom:26px; }
+.section-intro{ color:var(--muted); max-width:70ch; }
+
+hr.rule{
+  border:0;
+  border-top:1px solid var(--line);
+  margin:28px 0;
+}
+
+.grid{
+  display:grid;
+  gap:22px;
+}
+
+@media (min-width: 880px){
+  .grid-2{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+  .grid-3{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1,h2,h3{ line-height:1.15; letter-spacing:-.015em; }
+
+h1{
+  font-size:clamp(34px, 4.6vw, 64px);
+  font-weight:800;
+}
+
+h2{
+  font-size:clamp(26px, 3.2vw, 42px);
+  font-weight:800;
+}
+
+h3{
+  font-size:18px;
+  font-weight:800;
+}
+
+p{ margin:0 0 14px; }
+ul{ padding-left:18px; }
+li{ margin:0 0 8px; }
+
+.muted{ color:var(--muted); }
+.small{ font-size:14px; color:var(--muted); }
+
+.kicker{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:12px;
+  color:var(--muted);
+}
+.kicker::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:rgba(197,90,58,.55);
+  border-radius:999px;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.site-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+  gap:14px;
+}
+
+.nav-logo{
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.nav-links{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.nav-links a{
+  font-weight:700;
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:10px;
+  color:var(--text);
+}
+
+.nav-links a:hover{
+  background:rgba(197,90,58,.10);
+  color:var(--primary);
+}
+
+@media (max-width: 640px){
+  .site-nav{ flex-direction:column; align-items:flex-start; }
+  .nav-links{ width:100%; gap:8px; }
+  .nav-links a{ padding:10px 10px; }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 18px;
+  border-radius:999px;
+  border:1px solid transparent;
+  background:var(--primary);
+  color:#fff;
+  font-weight:800;
+  box-shadow:0 10px 22px rgba(197,90,58,.22);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+  background:var(--primary-2);
+  color:#fff;
+  box-shadow:0 14px 26px rgba(197,90,58,.25);
+}
+
+.btn:active{ transform:translateY(0); }
+
+.btn-ghost{
+  background:transparent;
+  color:var(--text);
+  border-color:var(--line);
+  box-shadow:none;
+}
+
+.btn-ghost:hover{
+  background:rgba(197,90,58,.10);
+  border-color:rgba(197,90,58,.35);
+  color:var(--primary);
+}
+
+/* =========================
+   CARDS
+========================= */
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-soft);
+  padding:22px;
+}
+
+.card.tight{ padding:18px; }
+
+.card h3{ margin-bottom:10px; }
+.card p:last-child{ margin-bottom:0; }
+
+/* =========================
+   HERO
+========================= */
+/* Expecting your HTML like:
+<section class="hero" id="top">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">...</div>
+</section>
+*/
+.hero{
+  position:relative;
+  min-height:var(--hero-min);
+  display:flex;
+  align-items:flex-end;
+  padding:96px 0 74px;
+  overflow:hidden;
+  background:#1e1b18;
+}
+
+/* Set hero image with one of these approaches:
+   A) In HTML: <section class="hero hero--kacie"> ...
+      and below you set background-image for .hero--kacie
+   B) Or inline style on the section
+*/
+.hero--kacie{
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.55)),
+    url("/assets/img/kacie-speaking.png");
+  background-size:cover;
+  background-position:center 30%;
+  background-repeat:no-repeat;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(25,20,18,.25) 0%,
+    var(--hero-overlay) 64%,
+    rgba(25,20,18,.70) 100%
+  );
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  color:#fff;
+  max-width:76ch;
+}
+
+.hero-content h1{ margin:0 0 14px; }
+.hero-content p{
+  margin:0 0 22px;
+  font-size:clamp(16px, 1.35vw, 20px);
+  opacity:.92;
+  max-width:62ch;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.hero .btn-ghost{
+  color:#fff;
+  border-color:rgba(255,255,255,.32);
+}
+.hero .btn-ghost:hover{
+  background:rgba(255,255,255,.10);
+  border-color:rgba(255,255,255,.48);
+  color:#fff;
+}
+
+/* =========================
+   LISTS / ICON ROWS
+========================= */
+.checklist{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.checklist li{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+.checklist li::before{
+  content:"✓";
+  font-weight:900;
+  color:var(--primary);
+  margin-top:1px;
+}
+
+/* =========================
+   ABOUT / FEATURE GRID
+========================= */
+.feature-grid{
+  display:grid;
+  gap:22px;
+}
+@media (min-width: 880px){
+  .feature-grid{ grid-template-columns:1.25fr .75fr; align-items:start; }
+}
+
+/* =========================
+   BOOKS
+========================= */
+.book-grid{
+  display:grid;
+  gap:22px;
+}
+@media (min-width: 880px){
+  .book-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+
+.book{
+  display:grid;
+  gap:16px;
+  align-items:start;
+}
+@media (min-width: 640px){
+  .book{ grid-template-columns:140px 1fr; }
+}
+
+.book-cover{
+  border-radius:var(--radius-sm);
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-soft);
+  background:rgba(255,255,255,.65);
+}
+
+.book-meta p{ color:var(--muted); }
+.book-meta .btn{ margin-top:8px; }
+
+/* =========================
+   WRITING / SELECTED WRITING CARDS
+========================= */
+.writing-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:22px;
+  margin-top:34px;
+}
+@media (max-width: 980px){
+  .writing-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+  .writing-grid{ grid-template-columns:1fr; }
+}
+
+.writing-card{
+  padding:0;                 /* overrides .card padding for nicer layout */
+  overflow:hidden;
+}
+
+.writing-link{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+/* MEDIA WRAPPER (prevents “missing image” layout collapse) */
+.writing-media{
+  aspect-ratio: 16 / 10;
+  overflow:hidden;
+  background:rgba(255,255,255,.65);
+  border-bottom:1px solid var(--line);
+}
+
+.writing-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+  transform:scale(1.01);
+}
+
+.writing-link:hover .writing-media img{
+  transform:scale(1.06);
+}
+
+.writing-content{
+  padding:20px 22px 22px;
+}
+
+.writing-content h3{
+  margin:0 0 8px;
+  font-size:18px;
+  line-height:1.25;
+}
+
+.writing-content p{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+
+.writing-cta{
+  font-weight:900;
+  font-size:14px;
+  color:var(--primary);
+}
+
+/* If your older HTML still uses .writing-image instead of .writing-media, keep it compatible */
+.writing-image{
+  aspect-ratio: 16 / 10;
+  overflow:hidden;
+  background:rgba(255,255,255,.65);
+  border-bottom:1px solid var(--line);
+}
+.writing-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+  transform:scale(1.01);
+}
+.writing-link:hover .writing-image img{ transform:scale(1.06); }
+
+/* =========================
+   BLOG POST CONTENT (nice defaults)
+========================= */
+.post{
+  max-width:78ch;
+}
+
+.post img{
+  border-radius:var(--radius-sm);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-soft);
+  margin:18px 0 22px;
+}
+
+.post h1{ margin-bottom:12px; }
+.post h2{ margin:34px 0 14px; }
+.post h3{ margin:26px 0 10px; }
+
+.post p{ margin-bottom:16px; }
+
+.post blockquote{
+  margin:20px 0;
+  padding:16px 18px;
+  border-left:4px solid rgba(197,90,58,.55);
+  background:rgba(247,241,232,.55);
+  border-radius:12px;
+  color:var(--text);
+}
+
+.post hr{
+  border:0;
+  border-top:1px solid var(--line);
+  margin:28px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:44px 0;
+  background:linear-gradient(to bottom, rgba(247,241,232,.35), rgba(255,255,255,1));
+}
+
+.footer-grid{
+  display:grid;
+  gap:18px;
+}
+@media (min-width: 880px){
+  .footer-grid{
+    grid-template-columns:1.2fr .8fr;
+    align-items:start;
+  }
+}
+
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.footer-links a{
+  padding:8px 10px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  font-weight:800;
+  font-size:14px;
+}
+.footer-links a:hover{
+  background:rgba(197,90,58,.10);
+  border-color:rgba(197,90,58,.35);
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.center{ text-align:center; }
+.mt-0{ margin-top:0; }
+.mt-1{ margin-top:8px; }
+.mt-2{ margin-top:14px; }
+.mt-3{ margin-top:22px; }
+.mt-4{ margin-top:34px; }
+.mb-0{ margin-bottom:0; }
+.max-70{ max-width:70ch; }
+
+/* =========================
+   REDUCED MOTION
+========================= */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *{ transition:none !important; }
 }
