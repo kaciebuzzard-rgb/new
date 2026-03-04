@@ -58,3 +58,6 @@ git commit -m "Add site images"
 git push
 ls -la assets/css
 git ls-files | grep -i "assets/css/styles.css"
+grep -R "nav-links" -n .
+grep -R "Writing" -n .
+grep -R "Blog" -n .
