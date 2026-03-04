@@ -113,3 +113,20 @@ git push
 ls -la assets/img
 file assets/img/hero
 file "assets/img/Neurodiversity Workbook cover"
+git mv 1.JPG 1.jpg 2>/dev/null
+git mv 1.PNG 1.png 2>/dev/null
+
+git mv 2.JPG 2.jpg 2>/dev/null
+git mv 2.PNG 2.png 2>/dev/null
+
+git mv 3.JPG 3.jpg 2>/dev/null
+git mv 3.PNG 3.png 2>/dev/null
+
+git mv 4.JPG 4.jpg 2>/dev/null
+git mv 4.PNG 4.png 2>/dev/null
+
+git mv 5.JPG 5.jpg 2>/dev/null
+git mv 5.PNG 5.png 2>/dev/null
+
+git mv 6.JPG 6.jpg 2>/dev/null
+git mv 6.PNG 6.png 2>/dev/null
