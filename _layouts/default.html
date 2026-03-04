@@ -8,7 +8,6 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main stylesheet -->
@@ -17,40 +16,38 @@
 
 <body>
 
-<header class="site-header">
-  <div class="wrap site-nav">
+  <header class="site-header">
+    <div class="wrap site-nav">
 
-    <a class="nav-logo" href="{{ '/' | relative_url }}#top">
-      Kacie Wielgus (Buzzard)
-    </a>
+      <a class="nav-logo" href="{{ '/' | relative_url }}#top">
+        Kacie Wielgus (Buzzard)
+      </a>
 
-<nav class="nav-links" aria-label="Primary">
-  <a href="{{ '/' | relative_url }}#about">About</a>
-  <a href="{{ '/' | relative_url }}#books">Books</a>
-  <a href="{{ '/' | relative_url }}#writing">Essays</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#books">Books</a>
+        <a href="{{ '/' | relative_url }}#writing">Essays</a>
 
-  <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
-    Medium
-  </a>
+        <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener noreferrer">
+          Medium
+        </a>
 
-  <a href="{{ '/' | relative_url }}#services">Services</a>
-  <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
-</nav>
+        <a href="{{ '/' | relative_url }}#services">Services</a>
+        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
+      </nav>
 
-  </div>
-</header>
+    </div>
+  </header>
 
-<main>
-  {{ content }}
-</main>
+  <main>
+    {{ content }}
+  </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p class="muted">
-      © {{ "now" | date: "%Y" }} {{ site.title }}
-    </p>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
+    </div>
+  </footer>
 
 </body>
 </html>
