@@ -1,43 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | {{ site.title }}</title>
+<header class="site-header">
+  <div class="wrap site-nav">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <a class="nav-logo" href="{{ '/' | relative_url }}#top">
+      Kacie Wielgus (Buzzard)
+    </a>
 
-  <!-- ONE stylesheet (make sure this file exists at assets/css/styles.css) -->
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-</head>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}#about">About</a>
+      <a href="{{ '/' | relative_url }}#books">Books</a>
+      <a href="{{ '/' | relative_url }}#writing">Essays</a>
 
-<body>
-  <header class="site-header">
-    <div class="wrap site-nav">
-      <a class="nav-logo" href="{{ '/' | relative_url }}#top">Kacie Wielgus (Buzzard)</a>
+      <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+        Medium
+      </a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
-        <a href="{{ '/' | relative_url }}#writing">Essays</a>
-        <a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Medium</a>
-        <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+      <a href="{{ '/' | relative_url }}#services">Services</a>
+      <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
+    </nav>
 
-  <main>
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
-    </div>
-  <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }} • updated</p>
-</body>
-</html>
+  </div>
+</header>
