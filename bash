@@ -79,3 +79,6 @@ git mv "for_the_love_of_autism.png." for_the_love_of_autism.png
 cd ../..
 git commit -m "Rename images to web-safe filenames"
 git push
+git add index.md
+git commit -m "Fix duplicate front matter and duplicate hero"
+git push
