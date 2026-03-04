@@ -110,3 +110,6 @@ git mv "assets/img/Neurodiversity Workbook cover" "assets/img/neurodiversity-wor
 git add -A
 git commit -m "Rename images to web-safe filenames"
 git push
+ls -la assets/img
+file assets/img/hero
+file "assets/img/Neurodiversity Workbook cover"
