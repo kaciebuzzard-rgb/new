@@ -17,9 +17,7 @@ title: Home
 
   <div class="wrap hero-content">
 
-    <h1>
-      Where lived experience drives systems change.
-    </h1>
+    <h1>Where lived experience drives systems change.</h1>
 
     <p>
       Keynotes and strategy that turn empathy into action—without the performative stuff.
@@ -33,8 +31,6 @@ title: Home
   </div>
 
 </section>
-
-
 
 <!-- ABOUT -->
 <section id="about" class="light">
@@ -64,8 +60,6 @@ title: Home
   </div>
 
 </section>
-
-
 
 <!-- BOOKS -->
 <section id="books" class="light">
@@ -123,8 +117,6 @@ title: Home
 
       </article>
 
-
-
       <!-- Love of Autism -->
       <article class="card book-card">
 
@@ -172,8 +164,6 @@ title: Home
 
 </section>
 
-
-
 <!-- SELECTED WRITING -->
 <section id="writing">
 
@@ -190,8 +180,6 @@ title: Home
       </p>
 
     </div>
-
-
 
     <div class="writing-grid">
 
@@ -235,8 +223,6 @@ title: Home
 
       </article>
 
-
-
       <!-- Invisible tax -->
       <article class="card writing-card">
 
@@ -276,8 +262,6 @@ title: Home
         </a>
 
       </article>
-
-
 
       <!-- Quiet aftermath -->
       <article class="card writing-card">
@@ -325,8 +309,6 @@ title: Home
 
 </section>
 
-
-
 <!-- SERVICES -->
 <section id="services" class="light">
 
@@ -343,8 +325,6 @@ title: Home
       </p>
 
     </div>
-
-
 
     <div class="grid">
 
@@ -376,8 +356,6 @@ title: Home
 
 </section>
 
-
-
 <!-- CONTACT -->
 <section id="contact">
 
@@ -395,8 +373,6 @@ title: Home
       </p>
 
     </div>
-
-
 
     <div class="card">
 
