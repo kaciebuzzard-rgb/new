@@ -1,96 +1,178 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>
-    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
-  </title>
+<title>
+{% if page.title %}
+{{ page.title }} | {{ site.title }}
+{% else %}
+{{ site.title }}
+{% endif %}
+</title>
 
-  {% if site.description %}
-  <meta name="description" content="{{ site.description | escape }}">
-  {% endif %}
+<meta name="description" content="{{ site.description }}">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
- <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <!-- Optional: social preview basics -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 180 | escape }}{% else %}{{ site.description | escape }}{% endif %}">
-  <meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
 </head>
 
 <body>
 
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main">Skip to content</a>
+<!-- =========================
+HEADER / NAV
+========================= -->
 
-  <!-- HEADER / NAV -->
-  <header class="site-header">
-    <div class="wrap nav-row">
-      <a class="nav-logo" href="{{ '/' | relative_url }}#top">
-        {{ site.title | default: "Kacie Wielgus (Buzzard)" }}
-      </a>
+<header class="site-header">
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#services">Services</a>
-        <a href="{{ '/' | relative_url }}#books">Books</a>
-        <a href="{{ '/' | relative_url }}#writing">Writing</a>
-        <a href="{{ '/blog/' | relative_url }}">Blog</a>
-        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<div class="wrap site-nav">
 
-  <!-- MAIN CONTENT -->
-  <main id="main" class="site-main">
-    {{ content }}
-  </main>
+<a class="nav-logo" href="{{ '/' | relative_url }}">
+Kacie Wielgus (Buzzard)
+</a>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
+<nav class="nav-links" aria-label="Primary">
 
-      <div class="footer-col">
-        <h3 class="footer-title">{{ site.title | default: "Kacie Wielgus (Buzzard)" }}</h3>
-        <p class="footer-text">
-          Speaker • Inclusion Consultant • Writer
-        </p>
-      </div>
+<a href="{{ '/' | relative_url }}#about">
+About
+</a>
 
-      <div class="footer-col">
-        <h4 class="footer-heading">Explore</h4>
-        <ul class="footer-links">
-          <li><a href="{{ '/' | relative_url }}#about">About</a></li>
-          <li><a href="{{ '/' | relative_url }}#services">Services</a></li>
-          <li><a href="{{ '/' | relative_url }}#books">Books</a></li>
-          <li><a href="{{ '/' | relative_url }}#writing">Writing</a></li>
-          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        </ul>
-      </div>
+<a href="{{ '/' | relative_url }}#speaking">
+Speaking
+</a>
 
-      <div class="footer-col">
-        <h4 class="footer-heading">Find me</h4>
-        <ul class="footer-links">
-          <li><a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">Medium</a></li>
-          <li><a href="mailto:kacie.buzzard@gmail.com">kacie.buzzard@gmail.com</a></li>
-        </ul>
-      </div>
+<a href="{{ '/' | relative_url }}#consulting">
+Consulting
+</a>
 
-    </div>
+<a href="{{ '/' | relative_url }}#writing">
+Writing
+</a>
 
-    <div class="wrap footer-bottom">
-      <p>
-        © {{ "now" | date: "%Y" }} {{ site.title | default: "Kacie Wielgus (Buzzard)" }}. All rights reserved.
-      </p>
-    </div>
-  </footer>
+<a href="{{ '/blog/' | relative_url }}">
+Blog
+</a>
+
+<a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+Medium
+</a>
+
+<a href="{{ '/' | relative_url }}#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+MAIN CONTENT
+========================= -->
+
+<main>
+
+{{ content }}
+
+</main>
+
+
+<!-- =========================
+OPTIONAL MEDIUM SECTION
+(if you create a #medium-posts container)
+========================= -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const container = document.getElementById("medium-posts");
+
+if(!container) return;
+
+container.innerHTML = `
+<div class="grid writing-grid">
+
+<article class="card writing-card">
+<h3>Essays on Caregiving</h3>
+<p>
+Writing about invisible labor, disability, resilience, and systems that families navigate every day.
+</p>
+
+<a class="btn btn-ghost"
+href="https://medium.com/@kwbuzzard"
+target="_blank"
+rel="noopener">
+
+Visit Medium →
+
+</a>
+</article>
+
+<article class="card writing-card">
+<h3>Latest Medium Posts</h3>
+<p>
+Personal essays exploring caregiving, rare disease parenting, and identity.
+</p>
+
+<a class="btn btn-ghost"
+href="https://medium.com/@kwbuzzard/latest"
+target="_blank"
+rel="noopener">
+
+Read the Latest →
+
+</a>
+</article>
+
+</div>
+`;
+});
+</script>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+<div class="wrap footer-inner">
+
+<p>
+© {{ site.time | date: "%Y" }} Kacie Wielgus (Buzzard)
+</p>
+
+<div class="footer-links">
+
+<a href="https://www.linkedin.com/in/kwbuzzard" target="_blank" rel="noopener">
+LinkedIn
+</a>
+
+<a href="https://medium.com/@kwbuzzard" target="_blank" rel="noopener">
+Medium
+</a>
+
+<a href="mailto:kacie.buzzard@gmail.com">
+Email
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
 
 </body>
 </html>
