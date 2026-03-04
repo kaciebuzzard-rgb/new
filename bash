@@ -61,3 +61,6 @@ git ls-files | grep -i "assets/css/styles.css"
 grep -R "nav-links" -n .
 grep -R "Writing" -n .
 grep -R "Blog" -n .
+git add .
+git commit -m "Replace styles.css with clean full version"
+git push
