@@ -93,3 +93,6 @@ git add assets/css/styles.css
 git commit -m "Fix hero image layout"
 git push
 ls -la assets/img
+git add assets/css/styles.css
+git commit -m "Clean CSS and fix hero"
+git push
