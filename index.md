@@ -2,34 +2,35 @@
 layout: default
 title: Home
 ---
+
 <!-- HERO -->
 <section class="hero" id="top">
 
-  <div class="hero-overlay"></div>
+  <img
+    class="hero-bg"
+    src="{{ '/assets/img/6.png' | relative_url }}"
+    alt="Kacie speaking on stage"
+    loading="eager"
+    decoding="async"
+  >
+
+  <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="wrap hero-content">
-
-    <h1>
-      Where lived experience drives systems change.
-    </h1>
+    <h1>Where lived experience drives systems change.</h1>
 
     <p>
       Keynotes and strategy that turn empathy into action—without the performative stuff.
     </p>
 
     <div class="hero-actions">
-      <a class="btn" href="#contact">
-        Book a Keynote
-      </a>
-
-      <a class="btn btn-ghost" href="#services">
-        Explore Services
-      </a>
+      <a class="btn" href="#contact">Book a Keynote</a>
+      <a class="btn btn-ghost" href="#services">Explore Services</a>
     </div>
-
   </div>
 
 </section>
+
 <!-- ABOUT -->
 <section id="about" class="light">
   <div class="wrap">
@@ -64,11 +65,7 @@ title: Home
     <div class="book-grid">
 
       <article class="card book-card">
-        <img
-          src="{{ '/assets/img/3.png' | relative_url }}"
-          alt="Neurodiversity Workbook for Parents"
-          loading="lazy"
-        >
+        <img src="{{ '/assets/img/3.png' | relative_url }}" alt="Neurodiversity Workbook for Parents" loading="lazy">
         <p class="role-pill">Author</p>
         <h3>Neurodiversity Workbook for Parents</h3>
         <p class="muted">
@@ -82,11 +79,7 @@ title: Home
       </article>
 
       <article class="card book-card">
-        <img
-          src="{{ '/assets/img/2.png' | relative_url }}"
-          alt="For the Love of Autism"
-          loading="lazy"
-        >
+        <img src="{{ '/assets/img/2.png' | relative_url }}" alt="For the Love of Autism" loading="lazy">
         <p class="role-pill role-pill--alt">Co-author</p>
         <h3>For the Love of Autism</h3>
         <p class="muted">
