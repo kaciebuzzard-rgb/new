@@ -31,24 +31,40 @@ title: Home
 
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="light">
-  <div class="wrap">
-    <div class="section-header">
-      <h2>About</h2>
-      <p class="section-intro">
-        I help organizations move beyond performative empathy into systems that actually support people.
-      </p>
+<section id="about" class="about-section">
+  <div class="wrap about-grid">
+
+    <div class="about-image">
+      <img src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}" 
+           alt="Kacie Wielgus Buzzard speaking and advocating for inclusive systems change">
     </div>
 
-    <div class="card">
+    <div class="about-text">
+      <h2>About Kacie</h2>
+
       <p>
-        Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose work lives at the intersection of lived experience and systems change.
+        Kacie Wielgus (Buzzard) is a communications strategist, writer, and
+        inclusion consultant whose work sits at the intersection of lived
+        experience and systems change. With more than 16 years of experience
+        leading digital strategy and social media for global brands, she now
+        helps organizations translate empathy into action through storytelling,
+        governance frameworks, and advocacy-informed communications.
       </p>
+
       <p>
-        Her talks and partnerships translate complexity into clarity—so teams can build policies, programs, and communication that hold up in real life.
+        Her work is shaped not only by professional expertise, but by life as a
+        caregiver navigating disability, rare disease, and complex systems.
+        Through writing, speaking, and consulting, she explores the invisible
+        labor of caregiving, the architecture of inclusion, and what it takes to
+        build institutions that actually work for the people they serve.
       </p>
+
+      <a class="btn btn-primary" href="/about/">
+        Read Full Bio →
+      </a>
+
     </div>
+
   </div>
 </section>
 
