@@ -8,3 +8,4 @@ include:
   title: Kacie Wielgus (Buzzard)
 markdown: kramdown
 permalink: pretty
+remote_theme: pages-themes/minimal@v0.2.0
