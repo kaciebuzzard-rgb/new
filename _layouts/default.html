@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Your repo has assets/css/style.css -->
+  <!-- ✅ Your repo file is assets/css/style.css -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
@@ -40,6 +40,44 @@
       <p class="muted">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
     </div>
   </footer>
+
+  <!-- OPTIONAL: Medium feed injection (only works if #medium-posts exists on the page) -->
+  <script>
+    const mediumFeed =
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kwbuzzard";
+
+    fetch(mediumFeed)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("medium-posts");
+        if (!container || !data.items) return;
+
+        const posts = data.items.slice(0, 3);
+
+        posts.forEach(post => {
+          const card = document.createElement("article");
+          card.className = "card";
+
+          const title = post.title;
+          const link = post.link;
+
+          const excerpt = post.description
+            .replace(/<[^>]+>/g, "")
+            .replace(/\s+/g, " ")
+            .substring(0, 160) + "...";
+
+          card.innerHTML = `
+            <h3>${title}</h3>
+            <p class="muted">${excerpt}</p>
+            <a class="btn btn-ghost" href="${link}" target="_blank" rel="noopener">
+              Read on Medium →
+            </a>
+          `;
+
+          container.appendChild(card);
+        });
+      });
+  </script>
 
 </body>
 </html>
