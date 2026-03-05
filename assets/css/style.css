@@ -251,68 +251,25 @@ li{ margin:0 0 8px; }
 .card h3{ margin-bottom:10px; }
 .card p:last-child{ margin-bottom:0; }
 
-/* =========================
-   HERO
-========================= */
-.hero{
-  position:relative;
-  min-height:var(--hero-min);
-  display:flex;
-  align-items:flex-end;
-  padding:96px 0 74px;
-  overflow:hidden;
-  background:#1e1b18;
-}
-
-/* Default hero image option (uses your repo image path) */
-.hero--kacie{
-  background-image:
-    linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.55)),
-    url("/assets/img/kacie-speaking.png");
-  background-size:cover;
-  background-position:center 30%;
-  background-repeat:no-repeat;
-}
-
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to bottom,
-    rgba(25,20,18,.25) 0%,
-    var(--hero-overlay) 64%,
-    rgba(25,20,18,.70) 100%
-  );
-  pointer-events:none;
-}
-
-.hero-content{
-  position:relative;
-  color:#fff;
-  max-width:76ch;
-}
-.hero-content h1{ margin:0 0 14px; }
-.hero-content p{
-  margin:0 0 22px;
-  font-size:clamp(16px, 1.35vw, 20px);
-  opacity:.92;
-  max-width:62ch;
-}
-
-.hero-actions{
+.hero-stats{
   display:flex;
   flex-wrap:wrap;
-  gap:12px;
+  gap:18px 22px;
+  margin-top:18px;
+  padding:0;
+  list-style:none;
+  color:rgba(255,255,255,.9);
 }
 
-.hero .btn-ghost{
-  color:#fff;
-  border-color:rgba(255,255,255,.32);
+.hero-stats li{
+  font-size:14px;
+  line-height:1.25;
 }
-.hero .btn-ghost:hover{
-  background:rgba(255,255,255,.10);
-  border-color:rgba(255,255,255,.48);
-  color:#fff;
+
+.hero-stats strong{
+  display:block;
+  font-size:16px;
+  font-weight:900;
 }
 
 /* =========================
