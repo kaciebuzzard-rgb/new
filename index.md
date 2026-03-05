@@ -1,315 +1,334 @@
----
-layout: default
-title: Home
----
-
-<!-- =========================
-HERO
-========================= -->
-
-<section class="hero" id="top">
-
-  <div class="hero-overlay"></div>
-
-  <div class="wrap hero-content">
-
-    <h1>
-      Where lived experience drives systems change.
-    </h1>
-
-    <p>
-      Speaker • Writer • Inclusion Consultant
-    </p>
-
-    <a class="btn" href="#speaking">
-      Book a Keynote
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-ABOUT
-========================= -->
-
-<section id="about">
-
-<div class="wrap">
-
-<h2>About Kacie</h2>
-
-<p style="max-width:720px; font-size:20px; margin-bottom:28px;">
-Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant working at the intersection of disability advocacy, caregiving, and systems change. Her work draws from lived experience navigating rare disease, complex medical systems, and the invisible labor of caregiving.
-</p>
-
-<p style="max-width:720px;">
-Through writing, speaking, and strategic advising, Kacie helps organizations understand what families and caregivers actually experience inside healthcare, education, and disability systems — and how those systems can work better.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-BOOKS
-========================= -->
-
-<section id="books">
-
-<div class="wrap">
-
-<h2>Books</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<img src="/assets/img/for-the-love-of-autism.jpg" alt="For the Love of Autism book cover">
-
-<h3>For the Love of Autism</h3>
-
-<p>
-A collection of essays exploring parenting, disability, and the complex emotional landscape of raising neurodivergent children.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<img src="/assets/img/neurodiversity-workbook.jpg" alt="Neurodiversity Workbook for Parents">
-
-<h3>Neurodiversity Workbook for Parents</h3>
-
-<p>
-A practical guide designed to help families navigate advocacy, education systems, and the daily realities of raising neurodivergent children.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-WRITING
-========================= -->
-
-<section id="writing">
-
-<div class="wrap">
-
-<h2>Selected Writing</h2>
-
-<p class="muted" style="max-width:650px; margin-bottom:30px;">
-Essays on caregiving, disability, invisible labor, and the systems families must navigate.
-</p>
-
-<div class="grid writing-grid">
-
-
-<article class="card writing-card">
-
-<div class="writing-image">
-
-<img src="/assets/img/invisible-tax.png"
-alt="Hands signing paperwork representing the invisible labor of caregiving">
-
-</div>
-
-<div class="writing-content">
-
-<h3>The Invisible Tax of Caregiving</h3>
-
-<p>
-Caregiving labor rarely appears on a bill, but families pay the cost every day.
-</p>
-
-<a class="btn btn-ghost"
-href="/blog/invisible-tax/">
-
-Read Essay →
-
-</a>
-
-</div>
-
-</article>
-
-
-
-<article class="card writing-card">
-
-<div class="writing-image">
-
-<img src="/assets/img/hospital-hallway.jpg"
-alt="Empty hospital hallway representing grief and waiting">
-
-</div>
-
-<div class="writing-content">
-
-<h3>The Hospital Hallway Where Time Collapses</h3>
-
-<p>
-On the strange geography of hospitals, where minutes stretch and life changes in an instant.
-</p>
-
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard"
-target="_blank">
-
-Read on Medium →
-
-</a>
-
-</div>
-
-</article>
-
-
-
-<article class="card writing-card">
-
-<div class="writing-image">
-
-<img src="/assets/img/ddx3x.png"
-alt="Portrait representing rare disease identity">
-
-</div>
-
-<div class="writing-content">
-
-<h3>Caroline and DDX3X</h3>
-
-<p>
-More than a diagnosis: the story of a girl behind the genetic report.
-</p>
-
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard"
-target="_blank">
-
-Read on Medium →
-
-</a>
-
-</div>
-
-</article>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-SPEAKING
-========================= -->
-
-<section id="speaking">
-
-<div class="wrap">
-
-<h2>Speaking</h2>
-
-<p style="max-width:720px; margin-bottom:28px;">
-Kacie speaks about caregiving, disability systems, and the lived experience behind policy and healthcare design.
-</p>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>The Invisible Labor of Caregiving</h3>
-
-<p>
-Why caregiving work remains largely unseen — and what organizations need to understand about the families living inside these systems.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Designing Systems That Actually Work</h3>
-
-<p>
-What healthcare, education, and disability systems look like from the inside — and how institutions can design for reality instead of theory.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Rare Disease and Family Systems</h3>
-
-<p>
-How a single diagnosis reorganizes families, careers, and identities.
-</p>
-
-</div>
-
-</div>
-
-<div style="margin-top:34px;">
-
-<a class="btn"
-href="mailto:kacie.buzzard@gmail.com">
-
-Book Kacie to Speak
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-CONTACT
-========================= -->
-
-<section id="contact">
-
-<div class="wrap">
-
-<h2>Connect</h2>
-
-<p style="max-width:600px; margin-bottom:22px;">
-For speaking invitations, writing opportunities, or collaborations.
-</p>
-
-<p>
-<a href="mailto:kacie.buzzard@gmail.com">
-kacie.buzzard@gmail.com
-</a>
-</p>
-
-<p style="margin-top:14px;">
-
-<a href="https://www.linkedin.com/in/kwbuzzard" target="_blank">
-LinkedIn
-</a>
-
-&nbsp;•&nbsp;
-
-<a href="https://medium.com/@kwbuzzard" target="_blank">
-Medium
-</a>
-
-</p>
-
-</div>
-
-</section>
+/* =========================================================
+   KACIES.LIFE — FULL STYLESHEET (paste entire file)
+   ========================================================= */
+
+/* =========================
+   DESIGN TOKENS
+========================= */
+:root{
+  --bg:#ffffff;
+  --light:#f7f1e8;
+  --surface:#ffffff;
+
+  --text:#1e1b18;
+  --muted:#6b5e55;
+
+  --line:rgba(30,27,24,.12);
+
+  --primary:#c55a3a;
+  --primary-2:#a94a2f;
+
+  --shadow:0 16px 40px rgba(0,0,0,.10);
+  --shadow-soft:0 10px 26px rgba(0,0,0,.08);
+
+  --radius:18px;
+  --radius-sm:12px;
+
+  --max:1100px;
+}
+
+/* =========================
+   RESET + BASE
+========================= */
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+}
+
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+p{ margin:0; }
+ul{ padding-left:1.1rem; }
+li{ margin:.45rem 0; }
+
+h1,h2,h3{
+  line-height:1.12;
+  letter-spacing:-.01em;
+}
+
+h2{
+  font-size:clamp(26px,3.2vw,40px);
+  margin-bottom:16px;
+}
+
+h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.muted{ color:var(--muted); }
+
+/* =========================
+   LAYOUT
+========================= */
+.wrap{
+  width:min(var(--max), 92%);
+  margin:0 auto;
+}
+
+section{ padding:84px 0; }
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:22px;
+}
+
+@media (max-width: 980px){
+  .grid{ grid-template-columns:1fr; }
+  section{ padding:64px 0; }
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.site-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+  gap:16px;
+}
+
+.nav-logo{
+  font-weight:800;
+  letter-spacing:-.02em;
+  font-size:18px;
+}
+
+.nav-links{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.nav-links a{
+  color:var(--muted);
+  font-weight:700;
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:999px;
+  transition:background .2s ease, color .2s ease;
+}
+
+.nav-links a:hover{
+  background:rgba(197,90,58,.10);
+  color:var(--text);
+}
+
+@media (max-width: 760px){
+  .site-nav{ flex-direction:column; align-items:flex-start; }
+  .nav-links{ gap:10px; }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:800;
+  border:1px solid rgba(255,255,255,.0);
+  background:var(--primary);
+  color:#fff;
+  box-shadow:var(--shadow-soft);
+  transition:transform .15s ease, filter .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover{
+  filter:brightness(.97);
+  transform:translateY(-1px);
+  box-shadow:var(--shadow);
+}
+
+.btn:active{
+  transform:translateY(0);
+}
+
+.btn-ghost{
+  background:transparent;
+  color:var(--primary-2);
+  border:1px solid rgba(197,90,58,.28);
+  box-shadow:none;
+}
+
+.btn-ghost:hover{
+  background:rgba(197,90,58,.08);
+}
+
+/* =========================
+   CARD
+========================= */
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow-soft);
+}
+
+.card img{
+  border-radius:14px;
+  border:1px solid rgba(30,27,24,.10);
+  margin-bottom:14px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+  position:relative;
+  min-height:75vh;
+  display:flex;
+  align-items:center;
+  padding:0; /* hero controls its own spacing */
+
+  /* IMPORTANT:
+     Put your file at: assets/img/kacie-hero.jpg
+     This path must start with / for Netlify + Jekyll */
+  background-image:url('/assets/img/kacie-hero.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.38);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:96px 0;
+  max-width:720px;
+  color:#fff;
+}
+
+.hero h1{
+  font-size:clamp(40px,6vw,68px);
+  line-height:1.02;
+  letter-spacing:-.03em;
+  text-shadow:0 10px 30px rgba(0,0,0,.28);
+}
+
+.hero p{
+  margin-top:18px;
+  font-size:clamp(18px,2.2vw,22px);
+  opacity:.92;
+  max-width:46ch;
+  text-shadow:0 10px 30px rgba(0,0,0,.22);
+}
+
+.hero .btn{
+  margin-top:28px;
+  border:1px solid rgba(255,255,255,.22);
+}
+
+@media (max-width: 760px){
+  .hero{ min-height:68vh; }
+  .hero-content{ padding:76px 0; }
+}
+
+/* =========================
+   SECTION TWEAKS
+========================= */
+#about p{
+  color:var(--text);
+}
+
+#books .card h3,
+#writing .card h3,
+#speaking .card h3{
+  margin-top:6px;
+}
+
+/* =========================
+   WRITING GRID
+========================= */
+.writing-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:22px;
+}
+
+@media (max-width: 980px){
+  .writing-grid{ grid-template-columns:1fr; }
+}
+
+.writing-card{
+  padding:0;                 /* overrides .card padding for nicer layout */
+  overflow:hidden;
+}
+
+.writing-image{
+  aspect-ratio: 16 / 10;
+  overflow:hidden;
+  background:rgba(255,255,255,.65);
+  border-bottom:1px solid var(--line);
+}
+
+.writing-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+.writing-card:hover .writing-image img{
+  transform:scale(1.03);
+}
+
+.writing-content{
+  padding:20px 22px 22px;
+}
+
+.writing-content p{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+
+/* =========================
+   LINKS (general)
+========================= */
+#contact a{
+  font-weight:800;
+  color:var(--primary-2);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+#contact a:hover{
+  text-decoration-thickness:2px;
+}
+
+/* =========================
+   FOOTER (optional)
+========================= */
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:34px 0;
+  color:var(--muted);
+  font-size:14px;
+}
