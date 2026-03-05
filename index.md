@@ -3,347 +3,199 @@ layout: default
 title: Home
 ---
 
-<!-- =========================
-HERO
-========================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
 
-<section class="hero" id="top"
-style="--hero-img:url('{{ "/assets/img/kacie-speaking.jpg" | relative_url }}');">
+    <div class="hero-copy">
+      <h1>Where lived experience drives systems change.</h1>
 
-<div class="hero-overlay"></div>
+      <p>
+        Keynotes and strategy that turn empathy into action—
+        without the performative stuff.
+      </p>
 
-<div class="wrap hero-content">
+      <a class="btn hero-btn" href="#contact">Book a Keynote</a>
+    </div>
 
-<h1>Where lived experience drives systems change.</h1>
-
-<p>
-Keynotes and strategy that turn empathy into action—without the performative stuff.
-</p>
-
-<a class="btn" href="#book">
-Book a Keynote
-</a>
-
-</div>
+  </div>
 </section>
 
 
-<!-- =========================
-ABOUT
-========================= -->
 
 <section id="about">
+  <div class="wrap">
 
-<div class="wrap">
+    <div class="section-header">
+      <h2>About</h2>
+    </div>
 
-<h2>About Kacie</h2>
+    <div class="grid two">
 
-<div class="grid">
+      <div class="card">
+        <p>
+          Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion strategist whose work sits at the intersection of lived experience and systems change.
+        </p>
 
-<div class="card">
+        <p>
+          Drawing from her work in healthcare, disability advocacy, and communications strategy, Kacie delivers keynotes that move audiences from empathy to action.
+        </p>
 
-<img src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
-alt="Kacie Wielgus Buzzard speaking">
+        <p>
+          Her work explores caregiving, invisible labor, disability justice, and the structural barriers families navigate every day.
+        </p>
+      </div>
 
-<p>
+      <div class="card">
+        <h3>What sets her apart</h3>
 
-Kacie Wielgus (Buzzard) is a speaker, writer, and inclusion consultant whose
-work sits at the intersection of lived experience, disability advocacy, and
-systems change.
+        <ul>
+          <li>Lived experience as a caregiver</li>
+          <li>16+ years in communications strategy</li>
+          <li>Deep expertise in disability systems</li>
+          <li>Storytelling that moves audiences to action</li>
+        </ul>
+      </div>
 
-Drawing from years navigating rare disease, caregiving, and complex
-medical systems, her work challenges organizations to move beyond performative
-empathy and build structures that actually support families.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>What sets her apart</h3>
-
-<ul>
-
-<li>Lived experience with rare disease and disability systems</li>
-
-<li>16+ years leading communications and social media strategy</li>
-
-<li>Speaker and advocate on caregiving, neurodiversity, and inclusion</li>
-
-<li>Author of essays on invisible labor and systemic failure</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
 
-<!-- =========================
-BOOK / SPEAKING
-========================= -->
-
-<section id="book">
-
-<div class="wrap">
-
-<h2>Speaking & Consulting</h2>
-
-<p class="section-intro">
-
-Kacie brings lived experience, strategy, and storytelling together to help
-organizations understand the real impact of their systems on families.
-
-</p>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Keynotes</h3>
-
-<p>
-
-Talks focused on caregiving, invisible labor, disability inclusion, and the
-gap between policy and reality.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Workshops</h3>
-
-<p>
-
-Interactive sessions helping teams rethink accessibility, support systems,
-and community engagement.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Consulting</h3>
-
-<p>
-
-Strategic advisory for organizations navigating disability inclusion,
-caregiver policy, and social impact initiatives.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-BOOKS
-========================= -->
 
 <section id="books">
+  <div class="wrap">
 
-<div class="wrap">
+    <div class="section-header">
+      <h2>Books</h2>
+    </div>
 
-<h2>Books</h2>
+    <div class="grid two">
 
-<div class="grid">
+      <div class="card">
+        <h3>For the Love of Autism</h3>
+        <p>
+          A reflection on parenting, advocacy, and raising children in systems that were never designed for them.
+        </p>
+      </div>
 
-<div class="card">
+      <div class="card">
+        <h3>The Neurodiversity Workbook for Parents</h3>
+        <p>
+          A practical guide to navigating schools, therapies, and advocacy while raising neurodivergent children.
+        </p>
+      </div>
 
-<img src="{{ '/assets/img/for-the-love-of-autism.jpg' | relative_url }}"
-alt="For the Love of Autism book cover">
+    </div>
 
-<h3>For the Love of Autism</h3>
-
-<p>
-
-A collaborative work exploring the lived experiences of families navigating
-autism and the systems surrounding it.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="{{ '/assets/img/neurodiversity-workbook.jpg' | relative_url }}"
-alt="Neurodiversity workbook cover">
-
-<h3>Neurodiversity Workbook for Parents</h3>
-
-<p>
-
-A guided resource designed to help families understand neurodiversity and
-navigate advocacy, support, and identity.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 
-<!-- =========================
-WRITING
-========================= -->
 
 <section id="writing">
+  <div class="wrap">
 
-<div class="wrap">
+    <div class="section-header">
+      <h2>Selected Writing</h2>
 
-<h2>Selected Writing</h2>
+      <p class="section-intro">
+        Essays on caregiving, invisible labor, disability, identity, and rebuilding systems from lived experience.
+      </p>
+    </div>
 
-<p class="section-intro">
+    <div class="writing-grid">
 
-Essays on caregiving, invisible labor, disability, identity, and rebuilding
-systems from lived experience.
+      <article class="card writing-card">
+        <div class="writing-image">
+          <img src="/assets/img/invisible-tax.png" alt="Hands signing paperwork representing invisible caregiving labor">
+        </div>
 
-</p>
+        <div class="writing-content">
+          <h3>The Invisible Tax of Caregiving</h3>
 
-<div class="grid writing-grid">
+          <p>
+            Caregiving comes with costs that never appear on invoices.
+          </p>
 
-
-<article class="card writing-card">
-
-<div class="writing-image">
-
-<img src="{{ '/assets/img/invisible-tax.png' | relative_url }}"
-alt="Hands signing paperwork representing invisible caregiving labor">
-
-</div>
-
-<div class="writing-content">
-
-<h3>The Invisible Tax of Caregiving</h3>
-
-<p>
-
-Caregiving carries costs that never appear on paper — time, vigilance,
-and the emotional labor of holding broken systems together.
-
-</p>
-
-<a class="btn btn-ghost"
-href="/blog/invisible-tax/">
-
-Read Essay →
-
-</a>
-
-</div>
-
-</article>
+          <a class="writing-cta" href="/blog/invisible-tax/">Read →</a>
+        </div>
+      </article>
 
 
-<article class="card writing-card">
 
-<div class="writing-content">
+      <article class="card writing-card">
+        <div class="writing-image">
+          <img src="/assets/img/ddx3x.png" alt="Child smiling">
+        </div>
 
-<h3>Caroline and DDX3X: More Than a Diagnosis</h3>
+        <div class="writing-content">
+          <h3>Caroline and DDX3X</h3>
 
-<p>
+          <p>
+            On rare disease, identity, and the girl behind the diagnosis.
+          </p>
 
-On rare disease, identity, and the girl behind the genetic report.
-
-</p>
-
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard"
-target="_blank"
-rel="noopener">
-
-Read on Medium →
-
-</a>
-
-</div>
-
-</article>
+          <a class="writing-cta" href="https://medium.com/@kwbuzzard" target="_blank">
+            Read on Medium →
+          </a>
+        </div>
+      </article>
 
 
-<article class="card writing-card">
 
-<div class="writing-content">
+      <article class="card writing-card">
+        <div class="writing-image">
+          <img src="/assets/img/hallway.png" alt="Hospital hallway">
+        </div>
 
-<h3>The End of an Era</h3>
+        <div class="writing-content">
+          <h3>The Hospital Hallway</h3>
 
-<p>
+          <p>
+            Where time collapses and lives change forever.
+          </p>
 
-On transitions, grief, and the quiet ache of change that no one else sees.
+          <a class="writing-cta" href="https://medium.com/@kwbuzzard" target="_blank">
+            Read →
+          </a>
+        </div>
+      </article>
 
-</p>
+    </div>
 
-<a class="btn btn-ghost"
-href="https://medium.com/@kwbuzzard"
-target="_blank"
-rel="noopener">
-
-Read on Medium →
-
-</a>
-
-</div>
-
-</article>
-
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 
-<!-- =========================
-CONTACT
-========================= -->
 
 <section id="contact">
+  <div class="wrap">
 
-<div class="wrap">
+    <div class="section-header">
+      <h2>Book a Keynote</h2>
+    </div>
 
-<h2>Contact</h2>
+    <div class="card contact-card">
 
-<p>
+      <p>
+        For speaking inquiries, collaborations, or media requests:
+      </p>
 
-For speaking, consulting, or collaboration inquiries:
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:kacie.buzzard@gmail.com">
+          kacie.buzzard@gmail.com
+        </a>
+      </p>
 
-</p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/kwbuzzard/" target="_blank">
+          linkedin.com/in/kwbuzzard
+        </a>
+      </p>
 
-<p>
+    </div>
 
-<a href="mailto:kacie.buzzard@gmail.com">
-kacie.buzzard@gmail.com
-</a>
-
-</p>
-
-<p>
-
-<a href="https://www.linkedin.com/in/kwbuzzard"
-target="_blank">
-LinkedIn
-</a>
-
-</p>
-
-</div>
-
+  </div>
 </section>
