@@ -3,12 +3,12 @@ layout: default
 title: Home
 permalink: /
 ---
-
-<section class="hero" id="top">
+<section class="hero hero--kacie" id="top">
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="wrap hero-content">
     <h1>Where lived experience drives systems change.</h1>
+
     <p>
       I speak, write, and build strategies that turn caregiving, disability, and lived experience into real systems change.
     </p>
@@ -19,11 +19,12 @@ permalink: /
     </div>
 
     <ul class="hero-stats" role="list">
-      <li><strong>16+ years</strong><span>communications + strategy</span></li>
-      <li><strong>Caregiving</strong><span>disability + systems lens</span></li>
-      <li><strong>Data-driven</strong><span>social + governance</span></li>
+      <li><strong>16+ years</strong> communications + strategy</li>
+      <li><strong>Caregiving</strong> disability + systems lens</li>
+      <li><strong>Data-driven</strong> social + governance</li>
     </ul>
   </div>
+
 </section>
 
 <section id="about">
