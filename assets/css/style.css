@@ -540,3 +540,20 @@ li{ margin:0 0 8px; }
   html{ scroll-behavior:auto; }
   *{ transition:none !important; }
 }
+/* NAV CTA (you use .nav-cta in HTML) */
+.nav-cta{
+  background:rgba(197,90,58,.10);
+  border:1px solid rgba(197,90,58,.35);
+  color:var(--primary);
+  font-weight:900;
+}
+.nav-cta:hover{
+  background:rgba(197,90,58,.16);
+  color:var(--primary-2);
+}
+
+/* FOOTER bottom line (you use .footer-bottom in HTML) */
+.footer-bottom{
+  color:var(--muted);
+  font-size:14px;
+}
