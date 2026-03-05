@@ -514,3 +514,38 @@ li{ margin:0 0 8px; }
   color:var(--muted);
   font-size:14px;
 }
+/* =========================
+   HERO STATS (you have this HTML but no CSS)
+========================= */
+.hero-stats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px 22px;
+  margin-top:18px;
+  padding:0;
+  list-style:none;
+  color:rgba(255,255,255,.90);
+}
+.hero-stats li{
+  font-size:14px;
+  line-height:1.25;
+}
+.hero-stats strong{
+  display:block;
+  font-size:16px;
+  font-weight:900;
+}
+
+/* =========================
+   FIX SECTION ANCHOR OFFSET (sticky header hides headings)
+========================= */
+section[id]{
+  scroll-margin-top:90px;
+}
+
+/* =========================
+   OPTIONAL: make hero a bit less tall on laptops
+========================= */
+@media (max-width: 1100px){
+  :root{ --hero-min:68vh; }
+}
